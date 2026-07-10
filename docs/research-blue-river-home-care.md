@@ -68,6 +68,12 @@ Public website images scraped from Squarespace:
 - `src/assets/scraped/about-caregiver.jpg`
 - `src/assets/scraped/consultation-support.jpg`
 
+Pexels resource-preview images:
+
+- `src/assets/resources/time-for-home-care.jpg` - Jsme MILA, https://www.pexels.com/photo/elderly-caregiver-assisting-senior-woman-at-home-29372727/
+- `src/assets/resources/care-consultation.jpg` - Jsme MILA, https://www.pexels.com/photo/elderly-caregiver-shaking-hands-with-senior-woman-29372534/
+- `src/assets/resources/paying-for-care.jpg` - T Leish, https://www.pexels.com/photo/elderly-couple-reading-documents-together-6975185/
+
 Source document:
 
 - `docs/Avatars.docx`

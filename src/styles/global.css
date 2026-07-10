@@ -1954,7 +1954,7 @@ h3 {
 }
 
 .ref-hero-copy h1 {
-  max-width: 10ch;
+  max-width: 16ch;
   margin: 0 0 18px;
   color: #fff;
   font-family: "Instrument Sans", Inter, sans-serif;
@@ -2065,17 +2065,6 @@ h3 {
   min-height: 176px;
 }
 
-.ref-service-card::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
-  border-radius: 0 0 0 var(--ref-radius);
-  background: var(--ref-white);
-  content: "";
-}
-
 .ref-service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 24px 45px rgba(13, 95, 117, 0.12);
@@ -2156,7 +2145,7 @@ h3 {
 }
 
 .ref-why-copy h2 {
-  max-width: 11ch;
+  max-width: 100%;
   margin: 0 0 55px;
 }
 
@@ -2242,7 +2231,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 45px;
   padding: 20px;
-  border-radius: var(--ref-radius) var(--ref-radius) 0 0;
+  border-radius: var(--ref-radius);
   background: #fff;
 }
 
@@ -2484,28 +2473,36 @@ h3 {
   margin-top: 35px;
 }
 
-.ref-counter-grid {
+.ref-consultation-promise {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  padding-top: 138px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.72fr);
+  gap: 90px;
+  align-items: end;
+  margin-top: 120px;
+  padding: 64px;
+  border-radius: var(--ref-radius);
+  color: #fff;
+  background: var(--ref-primary);
 }
 
-.ref-counter-grid > div {
-  display: grid;
-  text-align: center;
-}
-
-.ref-counter-grid strong {
+.ref-consultation-promise .ref-pill {
   color: var(--ref-primary);
-  font-family: "Instrument Sans", Inter, sans-serif;
-  font-size: 3.5rem;
-  line-height: 1;
+  background: var(--ref-soft-aqua);
 }
 
-.ref-counter-grid span {
-  margin-top: 8px;
-  color: var(--ref-primary-bright);
+.ref-consultation-promise h2 {
+  max-width: 13ch;
+  margin: 18px 0 0;
+  color: #fff;
+  font-size: 3.4rem;
+  text-wrap: pretty;
+}
+
+.ref-consultation-promise > div:last-child > p {
+  max-width: 56ch;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
 }
 
 .ref-appointment {
@@ -2857,6 +2854,10 @@ h3 {
   align-items: center;
 }
 
+.reference-inner .image-page-hero {
+  margin-bottom: 20px;
+}
+
 .reference-inner .page-hero-media,
 .reference-inner .page-hero-media img {
   min-height: 315px;
@@ -2941,6 +2942,10 @@ h3 {
 .reference-inner .leadership-list article:nth-child(3n),
 .reference-inner .scenario-list article:nth-child(3n) {
   background: var(--ref-soft-aqua);
+}
+
+.reference-inner .care-support-list article:nth-child(3n + 1) {
+  background: #fff;
 }
 
 .reference-inner .service-row,
@@ -3029,7 +3034,7 @@ h3 {
 
 .reference-inner .cta-band {
   width: min(1380px, calc(100% - 60px));
-  margin: 0 auto 120px;
+  margin: 120px auto;
   padding: 50px;
   border-radius: var(--ref-radius);
   color: var(--ref-ink);
@@ -3177,8 +3182,9 @@ h3 {
   display: block;
   margin-bottom: 86px;
   color: var(--ref-primary-bright);
-  font-size: 0.84rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .reference-inner .planning-grid h3 {
@@ -3822,18 +3828,20 @@ h3 {
     margin-top: 27px;
   }
 
-  .ref-counter-grid {
+  .ref-consultation-promise {
     grid-template-columns: 1fr;
-    gap: 35px;
-    padding-top: 60px;
+    gap: 28px;
+    margin-top: 60px;
+    padding: 30px 24px;
   }
 
   .ref-resources {
     padding-bottom: 194px;
   }
 
-  .ref-counter-grid strong {
-    font-size: 2.5rem;
+  .ref-consultation-promise h2 {
+    max-width: 100%;
+    font-size: 2.25rem;
   }
 
   .ref-appointment {
@@ -3964,7 +3972,7 @@ h3 {
   }
 
   .reference-inner .cta-band {
-    margin-bottom: 60px;
+    margin-block: 60px;
   }
 
   .reference-inner .cta-inner h2 {

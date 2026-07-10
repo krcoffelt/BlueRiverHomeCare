@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
 import Button from "../../components/ui/Button.astro";
 import servicesImage from "../../assets/scraped/services-personal-care.jpg";
 import consultationImage from "../../assets/scraped/consultation-support.jpg";
@@ -36,9 +35,6 @@ const planningFactors = [
   <section class="page-hero image-page-hero" data-cta-threshold>
     <div class="container split">
       <div>
-        <Breadcrumbs
-          items={[{ label: "Home", href: "/" }, { label: "Services" }]}
-        />
         <p class="eyebrow">Services</p>
         <h1>Home care that fits daily life.</h1>
         <p class="lead">
@@ -86,7 +82,6 @@ const planningFactors = [
     />
     <div class="inner-image-cta-overlay"></div>
     <div class="inner-image-cta-copy">
-      <p class="eyebrow">A practical first step</p>
       <h2 id="services-cta-title">Start with what you know.</h2>
       <Button href="/consultation/">Schedule a Free Consultation</Button>
     </div>
@@ -95,7 +90,7 @@ const planningFactors = [
   <section class="section" aria-labelledby="why-care-title">
     <div class="container split inner-feature-split">
       <div class="copy-stack">
-        <p class="eyebrow">Why Blue River</p>
+        <p class="eyebrow">Why Blue River Home Care?</p>
         <h2 id="why-care-title">Care that fits real life at home.</h2>
         <p class="lead">
           A useful care plan starts with what daily life actually looks like,
@@ -133,7 +128,7 @@ const planningFactors = [
     <div class="container">
       <div class="section-heading">
         <h2 id="planning-title">What shapes your care plan.</h2>
-        <p>Three decisions make the plan specific enough to be useful.</p>
+        <p>Three decisions make the plan practical.</p>
       </div>
       <div class="planning-grid">
         {
