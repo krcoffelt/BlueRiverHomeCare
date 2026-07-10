@@ -28,7 +28,7 @@ const {
 
 const pageTitle = title
   ? `${title} | ${site.name}`
-  : `${site.name} | Private-Pay In-Home Care`;
+  : `${site.name} | Home Care in Belton, MO`;
 const canonical = new URL(canonicalPath, site.url).toString();
 const imageUrl = new URL(image.src, site.url).toString();
 const businessImageUrl = new URL(defaultOgImage.src, site.url).toString();
@@ -78,9 +78,9 @@ const businessSchema = {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: "Private-pay in-home caregiving",
+        name: "In-home care and companionship",
         description:
-          "Companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
+          "Non-medical home care, companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
       },
     },
     {
@@ -108,6 +108,22 @@ const jsonLd = {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
+{
+  import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION && (
+    <meta
+      name="google-site-verification"
+      content={import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION}
+    />
+  )
+}
+{
+  import.meta.env.PUBLIC_BING_SITE_VERIFICATION && (
+    <meta
+      name="msvalidate.01"
+      content={import.meta.env.PUBLIC_BING_SITE_VERIFICATION}
+    />
+  )
+}
 <link rel="canonical" href={canonical} />
 {noindex && <meta name="robots" content="noindex,follow" />}
 <meta property="og:site_name" content={site.name} />

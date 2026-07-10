@@ -1,13 +1,25 @@
 export const confirmedServices = [
   {
     title: "In-Home Caregiving",
-    eyebrow: "Private pay",
+    eyebrow: "Non-medical home care",
     href: "/services/in-home-caregiving/",
     summary: "Companionship and practical help with daily routines.",
     details: [
       "Companionship and support with daily routines",
       "Laundry, meal help, and light cleaning",
       "Transfers and in-home support based on the care plan",
+    ],
+  },
+  {
+    title: "Companion Care",
+    eyebrow: "For older adults",
+    href: "/services/companion-care/",
+    summary:
+      "A steady presence, familiar conversation, and support for daily routines.",
+    details: [
+      "Conversation and familiar activities",
+      "Support around meals and household routines",
+      "More breathing room for adult children and spouses",
     ],
   },
   {

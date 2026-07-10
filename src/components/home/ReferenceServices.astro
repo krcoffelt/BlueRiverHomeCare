@@ -13,24 +13,28 @@ const services = [
     body: "A steady presence, familiar conversation, and less time spent alone.",
     icon: HeartHandshake,
     tone: "blue",
+    href: "/services/companion-care/",
   },
   {
     title: "Help with meals",
     body: "Support with meals while respecting familiar foods and kitchen routines.",
     icon: CookingPot,
     tone: "green",
+    href: "/services/in-home-caregiving/",
   },
   {
     title: "Laundry & Cleaning",
     body: "Practical help keeping clothing, linens, and everyday spaces manageable.",
     icon: Sparkles,
     tone: "aqua",
+    href: "/services/in-home-caregiving/",
   },
   {
     title: "Transfers and daily routines",
     body: "Hands-on help when transfers or other agreed daily tasks become harder.",
     icon: Accessibility,
     tone: "mist",
+    href: "/services/in-home-caregiving/",
   },
 ];
 ---
@@ -48,7 +52,7 @@ const services = [
           return (
             <a
               class={`ref-service-card ref-service-${service.tone}`}
-              href="/services/in-home-caregiving/"
+              href={service.href}
               data-reveal
               style={`--reveal-delay: ${index * 80}ms`}
             >

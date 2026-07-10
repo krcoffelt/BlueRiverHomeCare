@@ -15,14 +15,14 @@ const schema = {
 };
 
 const careFaqs = faqs.filter((_, index) =>
-  [0, 1, 2, 6, 7, 8, 9, 10].includes(index),
+  [0, 1, 2, 6, 7, 8, 9, 10, 11].includes(index),
 );
 const paymentFaqs = faqs.filter((_, index) => [3, 4, 5].includes(index));
 ---
 
 <BaseLayout
   title="Home Care FAQ"
-  description="Get answers about companionship, in-home care, private pay, costs, insurance, VA and Masonic assistance questions, schedules, and service areas."
+  description="Get answers about non-medical home care, companion care, private duty, costs, private pay, schedules, funding questions, and service areas."
   schema={schema}
 >
   <section class="page-hero faq-centered-hero" data-cta-threshold>

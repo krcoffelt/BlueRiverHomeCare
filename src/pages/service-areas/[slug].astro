@@ -20,14 +20,17 @@ interface Props {
 
 const { location } = Astro.props;
 const canonicalPath = `/service-areas/${location.slug}/`;
-const title = `Home Care in ${location.name}, MO`;
+const title =
+  location.slug === "belton-mo"
+    ? "Belton Home Care Services"
+    : `Home Care in ${location.name}, MO`;
 const description = location.seoDescription;
 const schema = [
   {
     "@type": "Service",
     "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
     name: `In-home caregiving in ${location.name}, Missouri`,
-    serviceType: "Private-pay in-home caregiving",
+    serviceType: "Non-medical home care and companionship",
     url: `https://www.blueriverhomecare.com${canonicalPath}`,
     provider: { "@id": "https://www.blueriverhomecare.com/#business" },
     areaServed: { "@type": "City", name: `${location.name}, Missouri` },
@@ -91,6 +94,11 @@ const schema = [
       <p>{location.familyContext}</p>
       <h2>Build care around the life already there.</h2>
       <p>{location.planningContext}</p>
+      <p>
+        <a class="text-link" href="/resources/how-families-pay-for-home-care/">
+          Review home care payment and funding questions
+        </a>
+      </p>
       <h2>Check caregiver availability near {location.name}.</h2>
       <p>{location.localContext}</p>
       <h2>Make your first care conversation more useful.</h2>
@@ -101,7 +109,7 @@ const schema = [
   <section class="section alt" aria-labelledby="local-process-title">
     <div class="container">
       <div class="section-heading">
-        <h2 id="local-process-title">How private-pay home care starts.</h2>
+        <h2 id="local-process-title">How home care starts.</h2>
         <p>
           Every family begins with the same careful sequence: listen, build the
           plan, then discuss a realistic start.
@@ -122,7 +130,10 @@ const schema = [
       <div class="center-actions">
         <Button href="/consultation/">Free Consultation</Button>
         <Button href="/services/in-home-caregiving/" variant="text" showArrow
-          >Explore private-pay in-home caregiving</Button
+          >Explore in-home caregiving</Button
+        >
+        <Button href="/services/companion-care/" variant="text" showArrow
+          >Explore companion care</Button
         >
       </div>
     </div>

@@ -1,6 +1,13 @@
 ---
-import { CalendarDays, Phone } from "@lucide/astro";
+import { CalendarDays, MessageSquareText, Phone } from "@lucide/astro";
 import { site } from "../../data/site";
+
+const currentPath = Astro.url.pathname;
+const isInquiryPage = ["/consultation/", "/contact/"].includes(currentPath);
+const inquiryHref =
+  currentPath === "/contact/"
+    ? "#contact-form-title"
+    : "#consultation-form-title";
 ---
 
 <aside class="mobile-cta" data-mobile-cta aria-label="Quick contact actions">
@@ -8,9 +15,15 @@ import { site } from "../../data/site";
     <Phone size={19} aria-hidden="true" />
     <span>Call Chris</span>
   </a>
-  <a href="/consultation/">
-    <CalendarDays size={19} aria-hidden="true" />
-    <span>Consultation</span>
+  <a href={isInquiryPage ? inquiryHref : "/consultation/"}>
+    {
+      isInquiryPage ? (
+        <MessageSquareText size={19} aria-hidden="true" />
+      ) : (
+        <CalendarDays size={19} aria-hidden="true" />
+      )
+    }
+    <span>{isInquiryPage ? "Inquiry Form" : "Consultation"}</span>
   </a>
 </aside>
 

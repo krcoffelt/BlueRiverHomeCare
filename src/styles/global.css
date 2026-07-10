@@ -1392,7 +1392,7 @@ h3 {
   }
 
   body {
-    padding-bottom: 68px;
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
   }
 
   h1 {
@@ -1569,7 +1569,8 @@ h3 {
     bottom: 0;
     left: 0;
     z-index: 50;
-    height: 68px;
+    min-height: calc(64px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     transform: translateY(100%);
@@ -1584,7 +1585,7 @@ h3 {
   }
 
   .mobile-cta a {
-    min-height: 68px;
+    min-height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3197,6 +3198,14 @@ h3 {
   color: var(--color-muted);
 }
 
+.reference-inner .companion-benefits article {
+  background: #fff;
+}
+
+.reference-inner .companion-actions {
+  justify-content: flex-start;
+}
+
 .reference-inner .values-layout {
   display: grid;
   grid-template-columns: minmax(360px, 0.78fr) minmax(0, 1fr);
@@ -3501,7 +3510,12 @@ h3 {
   }
 
   .ref-marquee {
-    width: 60%;
+    width: 100%;
+    border-radius: 0 0 var(--ref-radius) var(--ref-radius);
+  }
+
+  .ref-hero-notch {
+    display: none;
   }
 
   .ref-service-grid {
@@ -3623,13 +3637,12 @@ h3 {
   }
 
   .ref-hero-notch {
-    width: 70px;
-    height: 70px;
+    display: none;
   }
 
   .ref-marquee {
-    width: 60%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 16px;
   }
 
   .ref-marquee-track {
@@ -3858,21 +3871,59 @@ h3 {
   }
 
   .ref-form-panel h2 {
+    max-width: 100%;
     margin-bottom: 12px;
+    font-size: 1.9rem;
+    text-wrap: balance;
+  }
+
+  .ref-form-panel::after {
+    display: none;
   }
 
   .ref-form-panel .form-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .ref-form-panel .form-span {
     grid-column: 1 / -1;
   }
 
+  .ref-form-panel .field label {
+    font-size: 0.82rem;
+  }
+
+  .ref-form-panel input,
+  .ref-form-panel select,
   .ref-form-panel textarea {
-    height: 70px;
-    min-height: 70px;
+    min-height: 48px;
+    font-size: 1rem;
+  }
+
+  .ref-form-panel textarea {
+    height: 120px;
+    min-height: 120px;
+  }
+
+  .ref-form-panel .consent-field {
+    margin-block: 16px;
+    font-size: 0.85rem;
+  }
+
+  .ref-form-panel .form-submit {
+    display: grid;
+    gap: 12px;
+  }
+
+  .ref-form-panel .form-submit .button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .ref-form-panel .form-submit p {
+    max-width: none;
+    font-size: 0.76rem;
   }
 
   .ref-work-steps {
@@ -3911,14 +3962,14 @@ h3 {
   }
 
   .ref-footer-contact {
-    min-height: 330px;
+    min-height: 280px;
   }
 
   .ref-footer-links {
     grid-template-columns: 1fr;
     gap: 35px;
-    min-height: 950px;
-    align-content: space-between;
+    min-height: 0;
+    align-content: start;
   }
 
   .footer-bottom {
@@ -3964,6 +4015,30 @@ h3 {
 
   .reference-inner .contact-form {
     padding: 24px 18px;
+  }
+
+  .reference-inner .field label {
+    font-size: 0.88rem;
+  }
+
+  .reference-inner .field input,
+  .reference-inner .field select,
+  .reference-inner .field textarea {
+    font-size: 1rem;
+  }
+
+  .reference-inner .form-submit {
+    display: grid;
+    gap: 12px;
+  }
+
+  .reference-inner .form-submit .button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .reference-inner .form-submit p {
+    max-width: none;
   }
 
   .reference-inner .faq-list summary {
@@ -4018,17 +4093,17 @@ h3 {
   }
 
   .reference-inner .values-media {
-    min-height: 480px;
+    min-height: 420px;
   }
 
   .reference-inner .values-media picture:first-child img,
   .reference-inner .values-media > img:first-of-type {
-    height: 410px;
+    height: 360px;
   }
 
   .reference-inner .values-media picture:last-child img,
   .reference-inner .values-media > img:last-of-type {
-    height: 230px;
+    height: 205px;
     border-width: 8px;
   }
 
@@ -4071,7 +4146,21 @@ h3 {
   }
 
   .reference-inner .contact-form-media {
-    min-height: 520px;
+    min-height: 430px;
+  }
+
+  .reference-inner .contact-details-grid > div {
+    min-height: 0;
+  }
+
+  .reference-home .mobile-cta,
+  .reference-inner .mobile-cta {
+    display: grid !important;
+  }
+
+  .reference-home .button,
+  .reference-inner .button {
+    min-height: 48px;
   }
 
   .reference-inner .media-caption {
@@ -4088,6 +4177,13 @@ h3 {
 
   .reference-inner .faq-groups {
     gap: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  .reference-home .mobile-cta,
+  .reference-inner .mobile-cta {
+    display: grid !important;
   }
 }
 

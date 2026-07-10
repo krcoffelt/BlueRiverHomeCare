@@ -33,4 +33,4 @@ Benefit decisions belong to the insurer or program responsible for them. Blue Ri
 
 Bring a general picture of the current routine, timing concerns, who is involved in the decision, and what the family can realistically manage. Pricing and payment expectations should be discussed directly before finalizing a care plan or schedule.
 
-[Read the home care funding guide](/resources/how-families-pay-for-home-care/), [talk through private-pay care with Chris](/consultation/), or [send a care inquiry](/contact/) when your family is ready.
+[Read the home care funding guide](/resources/how-families-pay-for-home-care/), explore [in-home caregiving](/services/in-home-caregiving/) or [companion care](/services/companion-care/), and [talk through private-pay care with Chris](/consultation/) when your family is ready.

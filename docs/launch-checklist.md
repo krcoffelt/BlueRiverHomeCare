@@ -28,9 +28,12 @@ Last updated: July 10, 2026
 - [ ] Confirm the office NAP exactly matches Google Business Profile.
 - [ ] Add the approved Google Business Profile link.
 - [ ] Connect Google Search Console and submit `/sitemap-index.xml`.
-- [ ] Select GA4, Plausible, or Fathom and add it only after approval.
-- [ ] Track call clicks, consultation CTA clicks, and successful form submissions.
+- [ ] Connect Bing Webmaster Tools and submit `/sitemap-index.xml`.
+- [ ] Add the approved verification tokens to `PUBLIC_GOOGLE_SITE_VERIFICATION` and `PUBLIC_BING_SITE_VERIFICATION`.
+- [ ] Approve GA4 and set `PUBLIC_GA_MEASUREMENT_ID` in production, or leave it blank.
+- [ ] Verify the implemented phone-click, consultation-click, form-submit, and completed-lead events in production.
 - [ ] Add UTM capture only after the analytics approach is confirmed.
+- [ ] Record baseline rankings for Belton and Kansas City home-care terms, then review Search Console at 30, 60, and 90 days.
 
 ## Photography
 

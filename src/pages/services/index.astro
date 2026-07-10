@@ -28,7 +28,7 @@ const planningFactors = [
 
 <BaseLayout
   title="Home Care Services in Belton, MO"
-  description="Private-pay companionship and in-home care in Belton, MO, including meal help, laundry, light cleaning, transfers, and support with daily routines."
+  description="Explore non-medical home care services in Belton, MO, including companion care, meal help, laundry, cleaning, transfers, and daily living support."
   image={servicesImage}
   imageAlt="Caregiver helping an older adult with a daily routine at home"
 >
@@ -38,8 +38,8 @@ const planningFactors = [
         <p class="eyebrow">Services</p>
         <h1>Home care that fits daily life.</h1>
         <p class="lead">
-          Help with the routines that matter and the tasks the family cannot
-          always cover.
+          Non-medical, private-duty home care for the routines that matter and
+          the times family cannot always cover.
         </p>
       </div>
       <div class="media-frame page-hero-media">
@@ -66,6 +66,11 @@ const planningFactors = [
             <article>
               <h3>{item.title}</h3>
               <p>{item.body}</p>
+              {item.title === "Companionship" && (
+                <a class="text-link" href="/services/companion-care/">
+                  Explore companion care
+                </a>
+              )}
             </article>
           ))
         }
@@ -107,8 +112,7 @@ const planningFactors = [
           <div>
             <h3>Clear before care begins</h3>
             <p>
-              Tasks, scheduling, and private-pay expectations are discussed
-              first.
+              Tasks, scheduling, and payment expectations are discussed first.
             </p>
           </div>
         </div>

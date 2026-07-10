@@ -1,0 +1,193 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+import Button from "../../components/ui/Button.astro";
+import companionImage from "../../assets/scraped/about-family.jpg";
+import consultationImage from "../../assets/scraped/home-consultation.jpg";
+import { site } from "../../data/site";
+
+const canonicalPath = "/services/companion-care/";
+const schema = [
+  {
+    "@type": "Service",
+    "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
+    name: "Companion Care for Seniors",
+    serviceType: "Non-medical companion care",
+    url: `https://www.blueriverhomecare.com${canonicalPath}`,
+    provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+    areaServed: "Belton and the Kansas City, Missouri area",
+    description:
+      "In-home companionship for older adults, including conversation, familiar activities, and practical support shaped around daily routines.",
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.blueriverhomecare.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://www.blueriverhomecare.com/services/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Companion Care",
+        item: `https://www.blueriverhomecare.com${canonicalPath}`,
+      },
+    ],
+  },
+];
+
+const companionBenefits = [
+  {
+    title: "A familiar presence",
+    body: "Conversation, shared activities, and time together can make an ordinary day feel less isolated.",
+  },
+  {
+    title: "Support for routines",
+    body: "Companionship can be planned around meals, household routines, and the parts of the day that feel hardest alone.",
+  },
+  {
+    title: "More breathing room for family",
+    body: "A dependable companion can help adult children and spouses step back from carrying every hour themselves.",
+  },
+];
+---
+
+<BaseLayout
+  title="Companion Care in Belton, MO"
+  description="Companion care for seniors and older adults in Belton, MO, with conversation, familiar activities, daily routines, and support for families."
+  canonicalPath={canonicalPath}
+  schema={schema}
+  image={companionImage}
+  imageAlt="Older adults enjoying time together"
+>
+  <section class="page-hero image-page-hero" data-cta-threshold>
+    <div class="container split">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services/" },
+            { label: "Companion Care" },
+          ]}
+        />
+        <p class="eyebrow">Companionship care</p>
+        <h1>Companion care that brings connection home.</h1>
+        <p class="lead">
+          A steady, familiar presence for older adults who want more connection
+          and support while continuing life at home.
+        </p>
+        <Button href={site.phoneMainHref}>Call Chris</Button>
+      </div>
+      <div class="media-frame page-hero-media">
+        <Image
+          src={companionImage}
+          alt="Older adults spending time together over a familiar activity"
+          loading="eager"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="companion-intro-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">Care built around the person</p>
+        <h2 id="companion-intro-title">
+          Being at home should not mean being alone.
+        </h2>
+      </div>
+      <div class="prose-stack">
+        <p>
+          Families often begin searching for companion care when Mom or Dad is
+          spending more time alone, familiar routines are slipping, or one
+          relative has become the only source of regular support.
+        </p>
+        <p>
+          Blue River plans companionship with the client and family. The goal is
+          not to take over the day. It is to add connection and practical help
+          while respecting preferences, privacy, and independence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="companion-support-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="companion-support-title">
+          What companion care can make easier.
+        </h2>
+        <p>
+          The final plan depends on the person, household, and agreed routine.
+        </p>
+      </div>
+      <div class="care-support-list companion-benefits">
+        {
+          companionBenefits.map((benefit) => (
+            <article>
+              <h3>{benefit.title}</h3>
+              <p>{benefit.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="companion-fit-title">
+    <div class="container split inner-feature-split">
+      <div class="copy-stack">
+        <p class="eyebrow">A thoughtful first step</p>
+        <h2 id="companion-fit-title">Start with what has changed at home.</h2>
+        <p class="lead">
+          Tell Chris when your loved one is most alone, which routines matter,
+          and where the family is feeling stretched.
+        </p>
+        <div class="feature-points">
+          <div>
+            <h3>Companionship within a care plan</h3>
+            <p>
+              Conversation and shared time can stand alone or be coordinated
+              with other agreed non-medical home-care tasks.
+            </p>
+          </div>
+          <div>
+            <h3>Clear payment expectations</h3>
+            <p>
+              Blue River primarily provides private-pay care. Pricing and any
+              confirmed benefit questions are discussed before care begins.
+              <a href="/resources/how-families-pay-for-home-care/">
+                Review the home care funding guide.
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="center-actions companion-actions">
+          <Button href="/consultation/">Schedule a Free Consultation</Button>
+          <Button href="/services/in-home-caregiving/" variant="text" showArrow>
+            Explore in-home caregiving
+          </Button>
+        </div>
+      </div>
+      <div class="media-frame inner-notched-media">
+        <Image
+          src={consultationImage}
+          alt="Family members talking through care at home"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -3,7 +3,7 @@ export const site = {
   legalName: "Blue River Home Care LLC",
   url: "https://www.blueriverhomecare.com",
   description:
-    "Private-pay companionship and in-home care for families in Belton and nearby Kansas City, Missouri communities.",
+    "Local, non-medical home care and companionship for older adults and families in Belton and nearby Kansas City, Missouri communities.",
   email: "chris@blueriverhomecare.com",
   phoneMain: "816-641-2881",
   phoneMainE164: "+18166412881",
@@ -41,6 +41,7 @@ export const navigation = [
 
 export const footerNavigation = [
   { label: "In-Home Caregiving", href: "/services/in-home-caregiving/" },
+  { label: "Companion Care", href: "/services/companion-care/" },
   { label: "Free Consultation", href: "/consultation/" },
   { label: "Contact", href: "/contact/" },
   { label: "Privacy", href: "/privacy/" },

@@ -1,7 +1,7 @@
 ---
 title: "When Is It Time for Home Care?"
-seoTitle: "When to Consider Home Care"
-description: "Learn the practical signs that home care may help, from harder daily routines to family caregiver strain, and how to start planning before a crisis."
+seoTitle: "Signs an Aging Parent May Need Home Care"
+description: "Learn the signs an aging parent may need home care, from harder daily routines and loneliness to family caregiver strain, before a crisis."
 eyebrow: "Planning guide"
 order: 1
 readingTime: "5 minute read"
@@ -31,6 +31,6 @@ A collaborative care plan is stronger when the client is part of the decision fr
 
 ## Start planning before a crisis
 
-You do not need a perfect diagnosis, a complete weekly schedule, or agreement on every future decision before calling. A free consultation can help the family organize what is known, name the open questions, and decide whether private-pay in-home caregiving is worth exploring.
+You do not need a perfect diagnosis, a complete weekly schedule, or agreement on every future decision before calling. A free consultation can help the family organize what is known, name the open questions, and decide whether in-home caregiving or companion care is worth exploring.
 
-[Start with a free home care consultation](/consultation/) or review [how Blue River builds an in-home caregiving plan](/services/in-home-caregiving/).
+[Start with a free home care consultation](/consultation/), review [how Blue River builds an in-home caregiving plan](/services/in-home-caregiving/), or learn about [companion care for older adults](/services/companion-care/).

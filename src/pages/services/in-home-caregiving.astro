@@ -12,13 +12,13 @@ const schema = [
   {
     "@type": "Service",
     "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
-    name: "Private-Pay In-Home Caregiving",
+    name: "In-Home Caregiving",
     serviceType: "In-home caregiving",
     url: `https://www.blueriverhomecare.com${canonicalPath}`,
     provider: { "@id": "https://www.blueriverhomecare.com/#business" },
     areaServed: "Belton and the Kansas City, Missouri area",
     description:
-      "Private-pay companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
+      "Non-medical home care with companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
   },
   {
     "@type": "BreadcrumbList",
@@ -48,7 +48,7 @@ const schema = [
 
 <BaseLayout
   title="In-Home Caregiving in Belton, MO"
-  description="Private-pay companionship and in-home care in Belton, MO, including meals, laundry, light cleaning, transfers, and support with daily routines."
+  description="Find an in-home caregiver in Belton, MO for companionship, meals, laundry, cleaning, transfers, and support with daily living routines."
   canonicalPath={canonicalPath}
   schema={schema}
   image={careImage}
@@ -64,7 +64,7 @@ const schema = [
             { label: "In-Home Caregiving" },
           ]}
         />
-        <p class="eyebrow">Private pay</p>
+        <p class="eyebrow">Non-medical home care</p>
         <h1>In-home caregiving in Belton, MO.</h1>
         <p class="lead">Practical support for familiar routines at home.</p>
         <Button href={site.phoneMainHref}>Call Chris</Button>
@@ -91,6 +91,10 @@ const schema = [
         <p>
           Chris starts with how the day already works, where help is needed, and
           what the client wants to keep doing for themselves.
+        </p>
+        <p>
+          The result is daily living assistance shaped around the person, not a
+          preset package.
         </p>
       </div>
     </div>

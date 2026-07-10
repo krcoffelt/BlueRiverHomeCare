@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer.astro";
 import Header from "../components/layout/Header.astro";
 import MobileCta from "../components/layout/MobileCta.astro";
 import SeoHead from "../components/seo/SeoHead.astro";
+import SiteAnalytics from "../components/seo/SiteAnalytics.astro";
 import { site } from "../data/site";
 
 interface Props {
@@ -47,6 +48,7 @@ const {
       schema={schema}
       noindex={noindex}
     />
+    <SiteAnalytics />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

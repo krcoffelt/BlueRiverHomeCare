@@ -52,6 +52,11 @@ export const faqs = [
   {
     question: "Is home care the same as home health care?",
     answer:
-      "No. The service described on this website is private-pay in-home caregiving based on a family care plan. It does not represent skilled nursing, therapy, or licensed medical treatment. Call Chris to discuss the help you need and whether the service is an appropriate fit.",
+      "No. Blue River describes non-medical home care and companionship based on a family care plan. It does not represent skilled nursing, therapy, or licensed medical treatment. Call Chris to discuss the help you need and whether the service is an appropriate fit.",
+  },
+  {
+    question: "What is private-duty home care?",
+    answer:
+      "Private-duty home care is one-to-one, non-medical help arranged for a person at home. At Blue River, the care plan may include companionship, meal help, laundry, light cleaning, transfers, and support with agreed daily routines. Blue River primarily provides this care through private pay.",
   },
 ];
