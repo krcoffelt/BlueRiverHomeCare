@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import ResourceLayout from "../../layouts/ResourceLayout.astro";
+
+export async function getStaticPaths() {
+  const resources = await getCollection("resources");
+  return resources.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<"resources">;
+}
+
+const { entry } = Astro.props;
+---
+
+<ResourceLayout entry={entry} />

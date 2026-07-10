@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import Button from "../ui/Button.astro";
+import familyImage from "../../assets/scraped/about-family.jpg";
+import consultationImage from "../../assets/scraped/consultation-support.jpg";
+---
+
+<section class="ref-section ref-cta-section" aria-labelledby="ref-cta-title">
+  <div class="ref-container">
+    <div class="ref-cta-panel ref-notched" data-reveal>
+      <div>
+        <h2 id="ref-cta-title">A clearer plan for care at home</h2>
+        <p>
+          Start with what has changed, what matters most, and where the family
+          needs help.
+        </p>
+        <Button href="/consultation/">Get started</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ref-section ref-about" aria-labelledby="ref-about-title">
+  <div class="ref-container ref-about-grid">
+    <div class="ref-about-images" data-reveal>
+      <div class="ref-about-image ref-about-image-low">
+        <Image
+          src={consultationImage}
+          alt="A family member planning care at home"
+          widths={[420, 700, 900]}
+          sizes="(max-width: 767px) 44vw, 24vw"
+        />
+      </div>
+      <div class="ref-about-image ref-about-image-tall">
+        <Image
+          src={familyImage}
+          alt="Family spending time together at home"
+          widths={[480, 760, 960]}
+          sizes="(max-width: 767px) 52vw, 30vw"
+        />
+        <span class="ref-about-badge">Local<br />care</span>
+      </div>
+    </div>
+    <div class="ref-about-copy" data-reveal style="--reveal-delay: 120ms">
+      <p class="ref-pill">Who we are</p>
+      <h2 id="ref-about-title">About <span>Blue River Home Care</span></h2>
+      <p>
+        Blue River helps families plan private-pay companionship and practical
+        support around the client’s routines, preferences, and home.
+      </p>
+      <Button href="/about/" variant="secondary">Learn more</Button>
+    </div>
+  </div>
+</section>

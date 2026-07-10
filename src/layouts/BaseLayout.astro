@@ -1,0 +1,94 @@
+---
+import type { ImageMetadata } from "astro";
+import "../styles/global.css";
+import monogram from "../assets/brand/monogram.png";
+import Footer from "../components/layout/Footer.astro";
+import Header from "../components/layout/Header.astro";
+import MobileCta from "../components/layout/MobileCta.astro";
+import SeoHead from "../components/seo/SeoHead.astro";
+import { site } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
+  pageType?: "website" | "article";
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  bodyClass?: string;
+  noindex?: boolean;
+  hideCtaBand?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonicalPath,
+  image,
+  imageAlt,
+  pageType,
+  schema,
+  bodyClass = "reference-inner",
+  noindex = false,
+  hideCtaBand = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SeoHead
+      title={title}
+      description={description}
+      canonicalPath={canonicalPath}
+      image={image}
+      imageAlt={imageAlt}
+      pageType={pageType}
+      schema={schema}
+      noindex={noindex}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href={monogram.src} />
+    <meta name="theme-color" content="#0d4f62" />
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    {
+      !hideCtaBand && (
+        <section class="cta-band" aria-labelledby="footer-cta-title">
+          <div class="cta-inner">
+            <div>
+              <p class="kicker">Start with what you know</p>
+              <h2 id="footer-cta-title">
+                Talk through what has changed at home.
+              </h2>
+              <p>
+                Tell Chris what has changed and where your family needs help.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="button secondary" href={site.phoneMainHref}>
+                Call Chris
+              </a>
+              <a class="button ghost" href="/consultation/">
+                Schedule a Free Consultation
+              </a>
+            </div>
+          </div>
+        </section>
+      )
+    }
+    <Footer />
+    <MobileCta />
+  </body>
+</html>

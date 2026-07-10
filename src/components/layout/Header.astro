@@ -1,0 +1,87 @@
+---
+import { ChevronDown, Menu, Phone } from "@lucide/astro";
+import logoHeader from "../../assets/brand/logo-header.png";
+import logoMobile from "../../assets/brand/logo-mobile.png";
+import { navigation, site } from "../../data/site";
+
+const currentPath = Astro.url.pathname;
+const isCurrent = (href: string) =>
+  currentPath === href || (href !== "/" && currentPath.startsWith(href));
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <nav
+      class="site-nav desktop-nav header-left-nav"
+      aria-label="Primary navigation"
+    >
+      <a href="/" aria-current={currentPath === "/" ? "page" : undefined}
+        >Home</a
+      >
+      <a href="/about/" aria-current={isCurrent("/about/") ? "page" : undefined}
+        >About</a
+      >
+      <details class="desktop-pages-menu">
+        <summary>Pages <ChevronDown size={16} aria-hidden="true" /></summary>
+        <div>
+          <a href="/service-areas/">Service Areas</a>
+          <a href="/resources/">Resources</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+        </div>
+      </details>
+      <a
+        href="/services/"
+        aria-current={isCurrent("/services/") ? "page" : undefined}>Services</a
+      >
+    </nav>
+
+    <a class="brand-mark" href="/" aria-label={`${site.name} home`}>
+      <img
+        class="desktop-logo"
+        src={logoHeader.src}
+        alt={site.name}
+        width={logoHeader.width}
+        height={logoHeader.height}
+      />
+      <span class="mobile-brand" aria-hidden="true">
+        <span class="mobile-logo-crop"
+          ><img
+            src={logoMobile.src}
+            alt=""
+            width={logoMobile.width}
+            height={logoMobile.height}
+          /></span
+        >
+        <span><strong>Blue River</strong><small>Home Care</small></span>
+      </span>
+    </a>
+
+    <a class="button header-call" href={site.phoneMainHref}>
+      <Phone size={17} stroke-width={2.2} aria-hidden="true" />
+      <span>Call Chris</span>
+    </a>
+
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation menu">
+        <Menu size={24} stroke-width={2} aria-hidden="true" />
+        <span class="visually-hidden">Menu</span>
+      </summary>
+      <nav aria-label="Mobile navigation">
+        {
+          navigation.map((item) => (
+            <a
+              href={item.href}
+              aria-current={isCurrent(item.href) ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          ))
+        }
+        <a href="/consultation/">Free Consultation</a>
+        <a href={site.phoneMainHref}>Call Chris</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </details>
+  </div>
+</header>

@@ -1,0 +1,151 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+import Button from "../../components/ui/Button.astro";
+import servicesImage from "../../assets/scraped/services-personal-care.jpg";
+import consultationImage from "../../assets/scraped/consultation-support.jpg";
+import caregiverImage from "../../assets/scraped/about-caregiver.jpg";
+import { careSupportItems } from "../../data/services";
+
+const planningFactors = [
+  {
+    number: "01",
+    title: "The help that matters",
+    body: "Begin with the routines that are becoming difficult, from meals and laundry to transfers and companionship.",
+  },
+  {
+    number: "02",
+    title: "A workable schedule",
+    body: "The care plan should fit the client's preferences and the times when family support is hardest to provide.",
+  },
+  {
+    number: "03",
+    title: "A clear payment path",
+    body: "Chris explains private-pay expectations and can help organize questions about insurance or benefit programs.",
+  },
+];
+---
+
+<BaseLayout
+  title="Home Care Services in Belton, MO"
+  description="Private-pay companionship and in-home care in Belton, MO, including meal help, laundry, light cleaning, transfers, and support with daily routines."
+  image={servicesImage}
+  imageAlt="Caregiver helping an older adult with a daily routine at home"
+>
+  <section class="page-hero image-page-hero" data-cta-threshold>
+    <div class="container split">
+      <div>
+        <Breadcrumbs
+          items={[{ label: "Home", href: "/" }, { label: "Services" }]}
+        />
+        <p class="eyebrow">Services</p>
+        <h1>Home care that fits daily life.</h1>
+        <p class="lead">
+          Help with the routines that matter and the tasks the family cannot
+          always cover.
+        </p>
+      </div>
+      <div class="media-frame page-hero-media">
+        <Image
+          src={servicesImage}
+          alt="Caregiver supporting an older adult at home"
+          loading="eager"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 42vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="care-support-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="care-support-title">Practical help for daily life.</h2>
+        <p>Every task is agreed on with the client and family.</p>
+      </div>
+      <div class="care-support-list">
+        {
+          careSupportItems.map((item) => (
+            <article>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="inner-image-cta" aria-labelledby="services-cta-title">
+    <Image
+      src={consultationImage}
+      alt="Family discussing care options together at home"
+      widths={[900, 1400, 2000]}
+      sizes="(max-width: 767px) calc(100vw - 30px), calc(100vw - 60px)"
+    />
+    <div class="inner-image-cta-overlay"></div>
+    <div class="inner-image-cta-copy">
+      <p class="eyebrow">A practical first step</p>
+      <h2 id="services-cta-title">Start with what you know.</h2>
+      <Button href="/consultation/">Schedule a Free Consultation</Button>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="why-care-title">
+    <div class="container split inner-feature-split">
+      <div class="copy-stack">
+        <p class="eyebrow">Why Blue River</p>
+        <h2 id="why-care-title">Care that fits real life at home.</h2>
+        <p class="lead">
+          A useful care plan starts with what daily life actually looks like,
+          not a preset package.
+        </p>
+        <div class="feature-points">
+          <div>
+            <h3>Built with the family</h3>
+            <p>
+              The client and family help define priorities, routines, and
+              boundaries.
+            </p>
+          </div>
+          <div>
+            <h3>Clear before care begins</h3>
+            <p>
+              Tasks, scheduling, and private-pay expectations are discussed
+              first.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="media-frame inner-notched-media">
+        <Image
+          src={caregiverImage}
+          alt="Caregiver listening to an older adult at home"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="planning-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="planning-title">What shapes your care plan.</h2>
+        <p>Three decisions make the plan specific enough to be useful.</p>
+      </div>
+      <div class="planning-grid">
+        {
+          planningFactors.map((factor) => (
+            <article>
+              <span>{factor.number}</span>
+              <h3>{factor.title}</h3>
+              <p>{factor.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

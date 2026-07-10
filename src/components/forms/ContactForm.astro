@@ -1,0 +1,118 @@
+---
+import { Send } from "@lucide/astro";
+
+const formEndpoint =
+  import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT || "/thank-you/";
+---
+
+<form
+  class="contact-form"
+  name="care-inquiry"
+  method="POST"
+  action={formEndpoint}
+  data-netlify="true"
+  netlify-honeypot="company-website"
+>
+  <input type="hidden" name="form-name" value="care-inquiry" />
+  <p class="visually-hidden">
+    <label
+      >Leave this field empty: <input
+        name="company-website"
+        autocomplete="off"
+        tabindex="-1"
+      /></label
+    >
+  </p>
+
+  <div class="form-grid">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required />
+    </div>
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+      />
+    </div>
+    <div class="field">
+      <label for="city">City</label>
+      <input
+        id="city"
+        name="city"
+        type="text"
+        autocomplete="address-level2"
+        required
+      />
+    </div>
+    <div class="field">
+      <label for="care-for">Who needs care?</label>
+      <select id="care-for" name="careFor" required>
+        <option value="">Select one</option>
+        <option value="parent">Parent</option>
+        <option value="spouse">Spouse</option>
+        <option value="me">Me</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="contact-method">Preferred contact method</label>
+      <select id="contact-method" name="contactMethod" required>
+        <option value="">Select one</option>
+        <option value="phone">Phone call</option>
+        <option value="email">Email</option>
+        <option value="text">Text message</option>
+      </select>
+    </div>
+    <div class="field form-span">
+      <label for="timeline">When are you planning for care?</label>
+      <select id="timeline" name="timeline" required>
+        <option value="">Select one</option>
+        <option value="this-week">This week</option>
+        <option value="this-month">This month</option>
+        <option value="planning-ahead">Planning ahead</option>
+        <option value="not-sure">Not sure</option>
+      </select>
+    </div>
+    <div class="field form-span">
+      <label for="message">What would be helpful to talk through?</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        aria-describedby="message-help"
+        placeholder="Share the practical situation, timing, or questions you want to discuss. Please do not include Social Security, insurance, or detailed medical information."
+      ></textarea>
+      <span class="field-help" id="message-help"
+        >A short summary is enough. You do not need a diagnosis or finished care
+        plan.</span
+      >
+    </div>
+  </div>
+
+  <label class="consent-field">
+    <input type="checkbox" name="consent" value="yes" required />
+    <span
+      >I agree that Blue River Home Care may contact me about this inquiry using
+      the method I selected.</span
+    >
+  </label>
+
+  <div class="form-submit">
+    <button class="button" type="submit">
+      Request a Consultation
+      <Send size={17} aria-hidden="true" />
+    </button>
+    <p>
+      By submitting, you agree to the <a href="/privacy/">privacy policy</a>.
+    </p>
+  </div>
+</form>

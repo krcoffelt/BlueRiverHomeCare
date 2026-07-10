@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import { Mail, MapPin, Phone } from "@lucide/astro";
+import logoHeader from "../../assets/brand/logo-header.png";
+import { locations } from "../../data/locations";
+import { footerNavigation, site } from "../../data/site";
+---
+
+<footer class="footer">
+  <div class="ref-container footer-inner">
+    <div class="ref-footer-grid">
+      <div class="ref-footer-card ref-footer-contact ref-notched">
+        <a href="/" class="ref-footer-logo" aria-label={`${site.name} home`}>
+          <Image src={logoHeader} alt={site.name} widths={[260, 420]} />
+        </a>
+        <div>
+          <h2>Talk with Chris about care at home.</h2>
+          <a class="ref-footer-action" href={site.phoneMainHref}>
+            <Phone size={18} aria-hidden="true" />
+            {site.phoneMainFormatted}
+          </a>
+          <a class="ref-footer-action" href={`mailto:${site.email}`}>
+            <Mail size={18} aria-hidden="true" />
+            {site.email}
+          </a>
+        </div>
+      </div>
+
+      <div class="ref-footer-card ref-footer-links ref-notched">
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            {
+              footerNavigation.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h3>Service Areas</h3>
+          <ul>
+            {
+              locations.map((location) => (
+                <li>
+                  <a href={`/service-areas/${location.slug}/`}>
+                    {location.name}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h3>Contact information</h3>
+          <p class="ref-footer-meta">
+            <MapPin size={18} aria-hidden="true" />
+            <a href={site.mapUrl} target="_blank" rel="noreferrer"
+              >{site.officeAddress}</a
+            >
+          </p>
+          <p class="ref-footer-meta">
+            <Phone size={18} aria-hidden="true" /><a href={site.phoneMainHref}
+              >{site.phoneMainFormatted}</a
+            >
+          </p>
+          <p class="ref-footer-meta">
+            <Mail size={18} aria-hidden="true" /><a
+              href={`mailto:${site.email}`}>{site.email}</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright {new Date().getFullYear()} {site.legalName}.</span>
+      <span>Serving families from Belton, Missouri.</span>
+    </div>
+  </div>
+</footer>

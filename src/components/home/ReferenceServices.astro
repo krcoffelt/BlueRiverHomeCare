@@ -1,0 +1,71 @@
+---
+import {
+  Accessibility,
+  CookingPot,
+  HeartHandshake,
+  Sparkles,
+} from "@lucide/astro";
+import { ArrowUpRight } from "@lucide/astro";
+
+const services = [
+  {
+    title: "Companionship",
+    body: "A steady presence, familiar conversation, and less time spent alone.",
+    icon: HeartHandshake,
+    tone: "blue",
+  },
+  {
+    title: "Help with meals",
+    body: "Support with meals while respecting familiar foods and kitchen routines.",
+    icon: CookingPot,
+    tone: "green",
+  },
+  {
+    title: "Laundry and light cleaning",
+    body: "Practical help keeping clothing, linens, and everyday spaces manageable.",
+    icon: Sparkles,
+    tone: "aqua",
+  },
+  {
+    title: "Transfers and daily routines",
+    body: "Hands-on help when transfers or other agreed daily tasks become harder.",
+    icon: Accessibility,
+    tone: "mist",
+  },
+];
+---
+
+<section class="ref-section ref-services" aria-labelledby="ref-services-title">
+  <div class="ref-container">
+    <div class="ref-section-heading ref-section-heading-center" data-reveal>
+      <p class="ref-pill">Support shaped around the person</p>
+      <h2 id="ref-services-title">Discover our <span>services</span></h2>
+    </div>
+    <div class="ref-service-grid">
+      {
+        services.map((service, index) => {
+          const Icon = service.icon;
+          return (
+            <a
+              class={`ref-service-card ref-service-${service.tone}`}
+              href="/services/in-home-caregiving/"
+              data-reveal
+              style={`--reveal-delay: ${index * 80}ms`}
+            >
+              <span class="ref-service-icon">
+                <Icon size={28} />
+              </span>
+              <div>
+                <h3>{service.title}</h3>
+                <p>{service.body}</p>
+              </div>
+              <span class="ref-card-link">
+                Read more <ArrowUpRight size={16} aria-hidden="true" />
+              </span>
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

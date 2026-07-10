@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ReferenceAbout from "../components/home/ReferenceAbout.astro";
+import ReferenceConsultation from "../components/home/ReferenceConsultation.astro";
+import ReferenceHero from "../components/home/ReferenceHero.astro";
+import ReferenceMotion from "../components/home/ReferenceMotion.astro";
+import ReferenceResources from "../components/home/ReferenceResources.astro";
+import ReferenceServices from "../components/home/ReferenceServices.astro";
+import ReferenceTrust from "../components/home/ReferenceTrust.astro";
+import ReferenceWhyChoose from "../components/home/ReferenceWhyChoose.astro";
+import heroImage from "../assets/scraped/home-hero-caregiver.jpg";
+---
+
+<BaseLayout
+  title="Private-Pay Home Care in Belton, MO"
+  description="Private-pay companionship and in-home care for families in Belton, MO. Get help with meals, laundry, cleaning, transfers, and daily routines."
+  image={heroImage}
+  imageAlt="Caregiver spending time with an older adult at home"
+  bodyClass="reference-home"
+  hideCtaBand
+>
+  <ReferenceHero />
+  <ReferenceServices />
+  <ReferenceWhyChoose />
+  <ReferenceAbout />
+  <ReferenceTrust />
+  <ReferenceConsultation />
+  <ReferenceResources />
+  <ReferenceMotion />
+</BaseLayout>

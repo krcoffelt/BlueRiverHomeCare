@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
+import { privacyPolicy, site } from "../data/site";
+---
+
+<BaseLayout
+  title="Website Privacy and Contact Consent"
+  description="Read how Blue River Home Care collects and uses website inquiry information, handles service-provider access, and manages phone, email, and text consent."
+>
+  <section class="page-hero compact-page-hero" data-cta-threshold>
+    <div class="container">
+      <Breadcrumbs
+        items={[{ label: "Home", href: "/" }, { label: "Privacy" }]}
+      />
+      <p class="eyebrow">Online Privacy Policy</p>
+      <h1>Website privacy and contact consent.</h1>
+      <p class="lead">
+        How information submitted through this website may be collected and
+        used.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="article-container privacy-content">
+      <h2>Information we collect</h2>
+      <p>{privacyPolicy.collected}</p>
+      <p>
+        Please do not submit Social Security numbers, insurance numbers,
+        detailed medical records, or other sensitive information through the
+        initial website inquiry form.
+      </p>
+      <h2>How information is used</h2>
+      <ul>{privacyPolicy.uses.map((item) => <li>{item}</li>)}</ul>
+      <h2>Information sharing</h2>
+      <p>{privacyPolicy.sharing}</p>
+      <h2>Contact and text consent</h2>
+      <p>{privacyPolicy.sms}</p>
+      <h2>Questions</h2>
+      <p>
+        Questions about this notice can be sent to <a
+          href={`mailto:${site.email}`}>{site.email}</a
+        > or discussed by calling <a href={site.phoneMainHref}
+          >{site.phoneMainFormatted}</a
+        >.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

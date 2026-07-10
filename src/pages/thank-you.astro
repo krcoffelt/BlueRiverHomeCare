@@ -1,0 +1,31 @@
+---
+import { CircleCheck } from "@lucide/astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title="Thank You"
+  description="Your Blue River Home Care consultation inquiry has been received and is ready for follow-up."
+  noindex
+  hideCtaBand
+>
+  <section class="section thank-you-section" data-cta-threshold>
+    <div class="narrow-container center-copy">
+      <CircleCheck class="success-icon" size={48} aria-hidden="true" />
+      <p class="eyebrow">Inquiry received</p>
+      <h1>Thank you for reaching out.</h1>
+      <p class="lead">
+        Blue River Home Care will use the contact method you selected to follow
+        up about your care inquiry.
+      </p>
+      <p>
+        If the situation is time-sensitive, call <a href={site.phoneMainHref}
+          >{site.phoneMainFormatted}</a
+        >.
+      </p>
+      <Button href="/">Return Home</Button>
+    </div>
+  </section>
+</BaseLayout>

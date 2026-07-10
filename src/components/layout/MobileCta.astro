@@ -1,0 +1,34 @@
+---
+import { CalendarDays, Phone } from "@lucide/astro";
+import { site } from "../../data/site";
+---
+
+<aside class="mobile-cta" data-mobile-cta aria-label="Quick contact actions">
+  <a href={site.phoneMainHref}>
+    <Phone size={19} aria-hidden="true" />
+    <span>Call Chris</span>
+  </a>
+  <a href="/consultation/">
+    <CalendarDays size={19} aria-hidden="true" />
+    <span>Consultation</span>
+  </a>
+</aside>
+
+<script is:inline>
+  (() => {
+    const bar = document.querySelector("[data-mobile-cta]");
+    const threshold = document.querySelector("[data-cta-threshold]");
+    if (!bar) return;
+
+    if (!threshold) {
+      bar.classList.add("is-visible");
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => bar.classList.toggle("is-visible", !entry.isIntersecting),
+      { threshold: 0 },
+    );
+    observer.observe(threshold);
+  })();
+</script>

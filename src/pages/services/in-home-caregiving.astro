@@ -1,0 +1,147 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+import Button from "../../components/ui/Button.astro";
+import careImage from "../../assets/scraped/home-hero-caregiver.jpg";
+import { careSupportItems, fundingQuestions } from "../../data/services";
+import { site } from "../../data/site";
+
+const canonicalPath = "/services/in-home-caregiving/";
+const schema = [
+  {
+    "@type": "Service",
+    "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
+    name: "Private-Pay In-Home Caregiving",
+    serviceType: "In-home caregiving",
+    url: `https://www.blueriverhomecare.com${canonicalPath}`,
+    provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+    areaServed: "Belton and the Kansas City, Missouri area",
+    description:
+      "Private-pay companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.blueriverhomecare.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://www.blueriverhomecare.com/services/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "In-Home Caregiving",
+        item: `https://www.blueriverhomecare.com${canonicalPath}`,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="In-Home Caregiving in Belton, MO"
+  description="Private-pay companionship and in-home care in Belton, MO, including meals, laundry, light cleaning, transfers, and support with daily routines."
+  canonicalPath={canonicalPath}
+  schema={schema}
+  image={careImage}
+  imageAlt="Caregiver supporting an older adult with a daily routine at home"
+>
+  <section class="page-hero image-page-hero" data-cta-threshold>
+    <div class="container split">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services/" },
+            { label: "In-Home Caregiving" },
+          ]}
+        />
+        <p class="eyebrow">Private pay</p>
+        <h1>In-home caregiving in Belton, MO.</h1>
+        <p class="lead">Practical support for familiar routines at home.</p>
+        <Button href={site.phoneMainHref}>Call Chris</Button>
+      </div>
+      <div class="media-frame page-hero-media">
+        <Image
+          src={careImage}
+          alt="Caregiver supporting a client in a comfortable home setting"
+          loading="eager"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="care-approach-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">A personal care plan</p>
+        <h2 id="care-approach-title">Care that respects life at home.</h2>
+      </div>
+      <div class="prose-stack">
+        <p>
+          Chris starts with how the day already works, where help is needed, and
+          what the client wants to keep doing for themselves.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="care-support-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="care-support-title">Help where the day gets harder.</h2>
+        <p>
+          The final task list depends on the client, the home routine, and the
+          care plan built with the family.
+        </p>
+      </div>
+      <div class="care-support-list">
+        {
+          careSupportItems.map((item) => (
+            <article>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="funding-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">Paying for home care</p>
+        <h2 id="funding-title">Understand the cost before you commit.</h2>
+        <p class="lead">
+          Blue River is private pay. Some families may have benefits worth
+          checking.
+        </p>
+      </div>
+      <div class="prose-stack">
+        <ul class="check-list">
+          {fundingQuestions.map((question) => <li>{question}</li>)}
+        </ul>
+        <p>
+          Blue River does not determine eligibility or guarantee reimbursement.
+          Plan around private pay until coverage is confirmed in writing.
+        </p>
+        <Button
+          href="/resources/how-families-pay-for-home-care/"
+          variant="text"
+          showArrow>Read the home care funding guide</Button
+        >
+      </div>
+    </div>
+  </section>
+</BaseLayout>

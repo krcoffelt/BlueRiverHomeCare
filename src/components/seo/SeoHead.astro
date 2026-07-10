@@ -1,0 +1,131 @@
+---
+import type { ImageMetadata } from "astro";
+import logo from "../../assets/brand/logo-header.png";
+import defaultOgImage from "../../assets/scraped/home-consultation.jpg";
+import { locations } from "../../data/locations";
+import { site } from "../../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
+  pageType?: "website" | "article";
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  canonicalPath = Astro.url.pathname,
+  image = defaultOgImage,
+  imageAlt = "A family discussing in-home care options together",
+  pageType = "website",
+  schema = [],
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} | ${site.name}`
+  : `${site.name} | Private-Pay In-Home Care`;
+const canonical = new URL(canonicalPath, site.url).toString();
+const imageUrl = new URL(image.src, site.url).toString();
+const businessImageUrl = new URL(defaultOgImage.src, site.url).toString();
+const logoUrl = new URL(logo.src, site.url).toString();
+const additionalSchema = Array.isArray(schema) ? schema : [schema];
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": `${site.url}/#website`,
+  name: site.name,
+  alternateName: "Blue River",
+  url: site.url,
+  publisher: { "@id": `${site.url}/#business` },
+};
+const businessSchema = {
+  "@type": "LocalBusiness",
+  "@id": `${site.url}/#business`,
+  name: site.name,
+  legalName: site.legalName,
+  description: site.description,
+  url: site.url,
+  logo: logoUrl,
+  image: businessImageUrl,
+  telephone: site.phoneMainE164,
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address.street,
+    addressLocality: site.address.city,
+    addressRegion: site.address.state,
+    postalCode: site.address.postalCode,
+    addressCountry: site.address.country,
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    telephone: site.phoneMainE164,
+    email: site.email,
+    areaServed: "US-MO",
+    availableLanguage: "English",
+  },
+  areaServed: locations.map((location) => ({
+    "@type": "City",
+    name: `${location.name}, Missouri`,
+  })),
+  makesOffer: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Private-pay in-home caregiving",
+        description:
+          "Companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Free home care consultation",
+        description:
+          "A free phone or in-person discussion with Chris about care needs, scheduling, private-pay expectations, funding questions, and next steps.",
+      },
+    },
+  ],
+};
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...(canonical === `${site.url}/` ? [websiteSchema] : []),
+    businessSchema,
+    ...additionalSchema,
+  ],
+};
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex,follow" />}
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={pageType} />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:alt" content={imageAlt} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<meta name="twitter:image:alt" content={imageAlt} />
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(jsonLd)}
+/>

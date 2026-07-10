@@ -1,0 +1,218 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
+import Button from "../components/ui/Button.astro";
+import aboutImage from "../assets/scraped/about-family.jpg";
+import caregiverImage from "../assets/scraped/about-caregiver.jpg";
+import consultationImage from "../assets/scraped/home-consultation.jpg";
+import chrisImage from "../assets/brand/chris-jennen.png";
+import { site } from "../data/site";
+
+const values = [
+  {
+    title: "Listen first",
+    body: "The client and family know the routines and pressures that a preset package can miss.",
+  },
+  {
+    title: "Protect dignity",
+    body: "Support should respect the client's preferences, voice, and life at home.",
+  },
+  {
+    title: "Keep plans practical",
+    body: "Care is built around specific tasks, realistic schedules, and clear expectations.",
+  },
+  {
+    title: "Be direct about cost",
+    body: "Families deserve to understand private-pay expectations before making a commitment.",
+  },
+];
+
+const facts = [
+  { value: "8", label: "communities served" },
+  { value: "6", label: "everyday support areas" },
+  { value: "1", label: "plan built around the client" },
+  { value: "Free", label: "first consultation" },
+];
+---
+
+<BaseLayout
+  title="About Our Belton Home Care Team"
+  description="Meet the local team behind Blue River Home Care in Belton, MO, and learn how clients and families help shape each private-pay home care plan."
+  image={aboutImage}
+  imageAlt="Family spending time together at home"
+>
+  <section class="page-hero image-page-hero" data-cta-threshold>
+    <div class="container split">
+      <div>
+        <Breadcrumbs
+          items={[{ label: "Home", href: "/" }, { label: "About" }]}
+        />
+        <p class="eyebrow">About Blue River</p>
+        <h1>Home care planned around your family.</h1>
+        <p class="lead">
+          Blue River Home Care is based in Belton and helps clients and families
+          plan practical support around life at home.
+        </p>
+      </div>
+      <div class="media-frame page-hero-media">
+        <Image
+          src={aboutImage}
+          alt="Family spending time together in a comfortable home"
+          loading="eager"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="approach-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">The approach</p>
+        <h2 id="approach-title">Listen before deciding what care should be.</h2>
+      </div>
+      <div class="prose-stack">
+        <p class="lead">
+          The client and family understand the routines, preferences, and quiet
+          pressures that a preset care package can miss.
+        </p>
+        <p>
+          Blue River begins with a free consultation, then turns what the family
+          knows into a practical care plan and a schedule the client can live
+          with.
+        </p>
+        <Button href="/consultation/" variant="text" showArrow
+          >Learn about the free consultation</Button
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="mission-title">
+    <div class="container split inner-feature-split">
+      <div class="media-frame inner-notched-media">
+        <Image
+          src={caregiverImage}
+          alt="Caregiver and older adult talking together at home"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+      <div class="copy-stack">
+        <p class="eyebrow">Our purpose</p>
+        <h2 id="mission-title">Practical support for everyday life at home.</h2>
+        <p class="lead">
+          Blue River provides companionship and practical help when daily life
+          is asking more than the client or family can manage alone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="inner-image-cta" aria-labelledby="about-cta-title">
+    <Image
+      src={consultationImage}
+      alt="Older adult and family member sharing a quiet conversation"
+      widths={[900, 1400, 2000]}
+      sizes="(max-width: 767px) calc(100vw - 30px), calc(100vw - 60px)"
+    />
+    <div class="inner-image-cta-overlay"></div>
+    <div class="inner-image-cta-copy">
+      <p class="eyebrow">Start with a conversation</p>
+      <h2 id="about-cta-title">Tell Chris what has changed at home.</h2>
+      <Button href="/consultation/">Schedule a Free Consultation</Button>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="values-title">
+    <div class="container values-layout">
+      <div class="values-media">
+        <Image
+          src={aboutImage}
+          alt="Family spending time together at home"
+          widths={[600, 900, 1200]}
+          sizes="(max-width: 940px) 100vw, 34vw"
+        />
+        <Image
+          src={caregiverImage}
+          alt="Caregiver providing companionship to an older adult"
+          widths={[500, 700, 900]}
+          sizes="(max-width: 940px) 55vw, 20vw"
+        />
+      </div>
+      <div class="values-copy">
+        <p class="eyebrow">Our values</p>
+        <h2 id="values-title">Clear plans. Respectful care.</h2>
+        <div class="values-list">
+          {
+            values.map((value) => (
+              <article>
+                <h3>{value.title}</h3>
+                <p>{value.body}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section alt facts-section"
+    aria-label="Blue River at a glance"
+  >
+    <div class="container facts-grid">
+      {
+        facts.map((fact) => (
+          <div>
+            <strong>{fact.value}</strong>
+            <span>{fact.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="leadership-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="leadership-title">Meet the local team.</h2>
+        <p>Reach the people responsible for local operations and finance.</p>
+      </div>
+      <div class="leadership-feature">
+        <article class="leadership-person">
+          <Image
+            src={chrisImage}
+            alt="Chris Jennen, Director of Operations at Blue River Home Care"
+            widths={[500, 800, 1100]}
+            sizes="(max-width: 767px) 100vw, 40vw"
+          />
+          <div>
+            <h3>{site.primaryContact.name}</h3><p>
+              {site.primaryContact.role}
+            </p><p>
+              Chris is the first call for care needs, scheduling, and funding
+              questions.
+            </p><a href={`mailto:${site.email}`}>{site.email}</a>
+          </div>
+        </article>
+        <div class="leadership-list">
+          <article>
+            <h3>{site.secondaryContact.name}</h3><p>
+              {site.secondaryContact.role}
+            </p>
+          </article>
+          <article>
+            <h3>Belton office</h3><p>{site.officeAddress}</p><a
+              href={site.mapUrl}
+              target="_blank"
+              rel="noreferrer">Open map</a
+            >
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

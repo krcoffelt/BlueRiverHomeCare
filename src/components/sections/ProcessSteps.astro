@@ -1,0 +1,17 @@
+---
+import { processSteps } from "../../data/services";
+---
+
+<div class="process-list">
+  {
+    processSteps.map((step, index) => (
+      <article class="process-step">
+        <span aria-hidden="true">0{index + 1}</span>
+        <div>
+          <h3>{step.title}</h3>
+          <p>{step.body}</p>
+        </div>
+      </article>
+    ))
+  }
+</div>

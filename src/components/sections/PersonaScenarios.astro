@@ -1,0 +1,14 @@
+---
+import { familyScenarios } from "../../data/services";
+---
+
+<div class="scenario-list">
+  {
+    familyScenarios.map((scenario) => (
+      <article>
+        <h3>{scenario.title}</h3>
+        <p>{scenario.body}</p>
+      </article>
+    ))
+  }
+</div>

@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import {
+  Accessibility,
+  CookingPot,
+  HeartHandshake,
+  WashingMachine,
+} from "@lucide/astro";
+import Button from "../ui/Button.astro";
+import heroImage from "../../assets/scraped/home-hero-caregiver.jpg";
+
+const marqueeItems = [
+  { label: "Companionship", icon: HeartHandshake },
+  { label: "Help with meals", icon: CookingPot },
+  { label: "Laundry and light cleaning", icon: WashingMachine },
+  { label: "Transfers and daily routines", icon: Accessibility },
+];
+---
+
+<section class="ref-hero" aria-labelledby="home-hero-title">
+  <div class="ref-container">
+    <div class="ref-hero-media">
+      <Image
+        src={heroImage}
+        alt="Caregiver spending time with an older adult at home"
+        loading="eager"
+        widths={[720, 1080, 1440, 1800]}
+        sizes="(max-width: 767px) calc(100vw - 30px), calc(100vw - 60px)"
+      />
+      <div class="ref-hero-overlay"></div>
+      <div class="ref-hero-copy" data-reveal="hero">
+        <p class="ref-pill ref-pill-on-dark">
+          Private-pay home care near Belton
+        </p>
+        <h1 id="home-hero-title">Care that feels right at home.</h1>
+        <p>
+          Practical support for Mom or Dad, planned around familiar routines and
+          the help your family needs most.
+        </p>
+        <Button href="/consultation/">Schedule a Free Consultation</Button>
+      </div>
+      <div class="ref-hero-notch" aria-hidden="true"></div>
+      <div class="ref-marquee" aria-label="Blue River home care support">
+        <div class="ref-marquee-track">
+          {
+            [...marqueeItems, ...marqueeItems].map((item) => {
+              const Icon = item.icon;
+              return (
+                <div class="ref-marquee-item">
+                  <span class="ref-marquee-icon">
+                    <Icon size={24} />
+                  </span>
+                  <strong>{item.label}</strong>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

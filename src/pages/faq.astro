@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
+import FaqList from "../components/ui/FaqList.astro";
+import Button from "../components/ui/Button.astro";
+import { faqs } from "../data/faqs";
+
+const schema = {
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
+const careFaqs = faqs.filter((_, index) =>
+  [0, 1, 2, 6, 7, 8, 9, 10].includes(index),
+);
+const paymentFaqs = faqs.filter((_, index) => [3, 4, 5].includes(index));
+---
+
+<BaseLayout
+  title="Home Care FAQ"
+  description="Get answers about companionship, in-home care, private pay, costs, insurance, VA and Masonic assistance questions, schedules, and service areas."
+  schema={schema}
+>
+  <section class="page-hero faq-centered-hero" data-cta-threshold>
+    <div class="container center-copy">
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
+      <p class="eyebrow">Frequently asked questions</p>
+      <h1>Home care questions, answered.</h1>
+      <p class="lead">
+        Understand the service, payment path, planning process, and next step
+        before your family makes a commitment.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container faq-page-layout">
+      <div class="faq-groups">
+        <section aria-labelledby="care-faq-title">
+          <p class="eyebrow">Care and services</p>
+          <h2 id="care-faq-title">Planning help at home.</h2>
+          <FaqList items={careFaqs} />
+        </section>
+        <section aria-labelledby="payment-faq-title">
+          <p class="eyebrow">Planning and payment</p>
+          <h2 id="payment-faq-title">Cost and funding questions.</h2>
+          <FaqList items={paymentFaqs} />
+        </section>
+      </div>
+      <aside class="faq-aside">
+        <p class="eyebrow">Still unsure?</p>
+        <h2>Still deciding where to start?</h2>
+        <p>A free consultation can help you organize the questions first.</p>
+        <Button href="/consultation/">Free Consultation</Button>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+import AreaBand from "../../components/sections/AreaBand.astro";
+import Button from "../../components/ui/Button.astro";
+import { site } from "../../data/site";
+---
+
+<BaseLayout
+  title="Home Care Service Areas Near Belton, MO"
+  description="Blue River Home Care serves Belton, Raymore, Lee's Summit, Grandview, Raytown, Greenwood, Independence, and Kansas City, subject to availability."
+>
+  <section class="page-hero" data-cta-threshold>
+    <div class="container">
+      <Breadcrumbs
+        items={[{ label: "Home", href: "/" }, { label: "Service Areas" }]}
+      />
+      <p class="eyebrow">Service areas</p>
+      <h1>Home care near Belton, MO.</h1>
+      <p class="lead">
+        From its Belton office, Blue River plans private-pay in-home caregiving
+        with families across eight Kansas City-area communities.
+      </p>
+    </div>
+  </section>
+
+  <section class="section dark" aria-labelledby="cities-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="cities-title">Home care service areas.</h2>
+        <p>
+          Choose your city for local care-planning guidance, then confirm the
+          address, schedule, and current caregiver availability.
+        </p>
+      </div>
+      <AreaBand />
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="office-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">Belton office</p>
+        <h2 id="office-title">Visit or call our Belton office.</h2>
+        <p class="lead">
+          Start by phone or ask whether an in-person consultation in Belton is
+          the easier first step for your family.
+        </p>
+      </div>
+      <div class="location-detail">
+        <p><strong>{site.legalName}</strong></p>
+        <p>{site.officeAddress}</p>
+        <p>
+          <a href={site.phoneMainHref}>{site.phoneMainFormatted}</a><br /><a
+            href={`mailto:${site.email}`}>{site.email}</a
+          >
+        </p>
+        <Button href={site.mapUrl} variant="text" showArrow
+          >Open in Google Maps</Button
+        >
+      </div>
+    </div>
+  </section>
+</BaseLayout>

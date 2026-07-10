@@ -1,0 +1,130 @@
+---
+import type { ServiceLocation } from "../../data/locations";
+import { locations } from "../../data/locations";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+import Button from "../../components/ui/Button.astro";
+import ProcessSteps from "../../components/sections/ProcessSteps.astro";
+import { site } from "../../data/site";
+
+export function getStaticPaths() {
+  return locations.map((location) => ({
+    params: { slug: location.slug },
+    props: { location },
+  }));
+}
+
+interface Props {
+  location: ServiceLocation;
+}
+
+const { location } = Astro.props;
+const canonicalPath = `/service-areas/${location.slug}/`;
+const title = `Home Care in ${location.name}, MO`;
+const description = location.seoDescription;
+const schema = [
+  {
+    "@type": "Service",
+    "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
+    name: `In-home caregiving in ${location.name}, Missouri`,
+    serviceType: "Private-pay in-home caregiving",
+    url: `https://www.blueriverhomecare.com${canonicalPath}`,
+    provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+    areaServed: { "@type": "City", name: `${location.name}, Missouri` },
+    description,
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.blueriverhomecare.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Service Areas",
+        item: "https://www.blueriverhomecare.com/service-areas/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: location.name,
+        item: `https://www.blueriverhomecare.com${canonicalPath}`,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  schema={schema}
+>
+  <section class="page-hero location-hero" data-cta-threshold>
+    <div class="container">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Service Areas", href: "/service-areas/" },
+          { label: location.name },
+        ]}
+      />
+      <p class="eyebrow">{location.name}, Missouri</p>
+      <h1>In-home caregiving in {location.name}, MO.</h1>
+      <p class="lead">{location.shortDescription}</p>
+      <Button href={site.phoneMainHref}>Call Chris</Button>
+    </div>
+  </section>
+
+  <section class="section location-copy" aria-labelledby="local-care-title">
+    <div class="article-container">
+      <h2 id="local-care-title">
+        Start with the routine, not a service package.
+      </h2>
+      <p>{location.intro}</p>
+      <h2>Support the family without sidelining the client.</h2>
+      <p>{location.familyContext}</p>
+      <h2>Build care around the life already there.</h2>
+      <p>{location.planningContext}</p>
+      <h2>Check caregiver availability near {location.name}.</h2>
+      <p>{location.localContext}</p>
+      <h2>Make your first care conversation more useful.</h2>
+      <p>{location.questionsContext}</p>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="local-process-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="local-process-title">How private-pay home care starts.</h2>
+        <p>
+          Every family begins with the same careful sequence: listen, build the
+          plan, then discuss a realistic start.
+        </p>
+      </div>
+      <ProcessSteps />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="narrow-container copy-stack center-copy">
+      <p class="eyebrow">Serving {location.name}</p>
+      <h2>Talk through home care in {location.name}.</h2>
+      <p class="lead">
+        Confirm the location, timing, and current caregiver availability with
+        Blue River.
+      </p>
+      <div class="center-actions">
+        <Button href="/consultation/">Free Consultation</Button>
+        <Button href="/services/in-home-caregiving/" variant="text" showArrow
+          >Explore private-pay in-home caregiving</Button
+        >
+      </div>
+    </div>
+  </section>
+</BaseLayout>

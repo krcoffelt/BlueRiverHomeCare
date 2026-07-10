@@ -1,0 +1,15 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import { locations } from "../../data/locations";
+---
+
+<div class="area-links">
+  {
+    locations.map((location) => (
+      <a href={`/service-areas/${location.slug}/`}>
+        <span>{location.name}</span>
+        <ArrowRight size={17} aria-hidden="true" />
+      </a>
+    ))
+  }
+</div>

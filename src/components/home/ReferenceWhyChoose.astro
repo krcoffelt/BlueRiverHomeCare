@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import { CalendarCheck, MapPin, Phone } from "@lucide/astro";
+import careImage from "../../assets/scraped/about-caregiver.jpg";
+import { site } from "../../data/site";
+
+const reasons = [
+  {
+    title: "Care built around routines",
+    body: "The plan starts with how the day already works and where another set of hands would help.",
+  },
+  {
+    title: "The client keeps a voice",
+    body: "Preferences, privacy, and independence stay central to every agreed task.",
+  },
+  {
+    title: "Families get a clearer plan",
+    body: "Chris helps organize services, scheduling, costs, and the questions that need follow-up.",
+  },
+];
+---
+
+<section class="ref-why" aria-labelledby="ref-why-title">
+  <div class="ref-container ref-why-grid">
+    <div class="ref-why-copy" data-reveal>
+      <h2 id="ref-why-title">Why choose <span>Blue River</span></h2>
+      <div class="ref-accordion">
+        {
+          reasons.map((reason, index) => (
+            <details open={index === 0}>
+              <summary>{reason.title}</summary>
+              <p>{reason.body}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+    <div class="ref-why-media" data-reveal style="--reveal-delay: 100ms">
+      <Image
+        src={careImage}
+        alt="Caregiver talking with an older adult at home"
+        widths={[640, 960, 1280]}
+        sizes="(max-width: 991px) calc(100vw - 60px), 48vw"
+      />
+      <a
+        class="ref-media-action"
+        href={site.phoneMainHref}
+        aria-label="Call Chris"
+      >
+        <Phone size={26} aria-hidden="true" />
+      </a>
+      <div class="ref-why-meta">
+        <div>
+          <CalendarCheck size={28} aria-hidden="true" />
+          <span
+            ><strong>Free consultation</strong><small>Phone or in person</small
+            ></span
+          >
+        </div>
+        <div>
+          <MapPin size={28} aria-hidden="true" />
+          <span
+            ><strong>Local planning</strong><small>Based in Belton</small></span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

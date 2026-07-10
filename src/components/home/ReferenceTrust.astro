@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import { BadgeDollarSign, CircleCheckBig, ShieldCheck } from "@lucide/astro";
+import Button from "../ui/Button.astro";
+import chrisImage from "../../assets/brand/chris-jennen.png";
+import supportImage from "../../assets/scraped/services-personal-care.jpg";
+---
+
+<section class="ref-section ref-trust" aria-label="Blue River care planning">
+  <div class="ref-container ref-trust-grid">
+    <article class="ref-trust-panel ref-trust-team ref-notched" data-reveal>
+      <h2>Talk directly with Chris</h2>
+      <div class="ref-team-strip">
+        <div class="ref-team-person">
+          <Image
+            src={chrisImage}
+            alt="Chris Jennen, Director of Operations"
+            widths={[220, 360]}
+          />
+          <strong>Chris Jennen</strong>
+          <span>Director of Operations</span>
+        </div>
+        <div class="ref-team-moment">
+          <Image
+            src={supportImage}
+            alt="Caregiver supporting a client at home"
+            widths={[320, 520]}
+          />
+          <strong>A plan built together</strong>
+          <span>Client, family, and care team</span>
+        </div>
+      </div>
+      <Button href="/contact/" variant="secondary">Send a care inquiry</Button>
+    </article>
+
+    <article
+      class="ref-trust-panel ref-trust-funding ref-notched"
+      data-reveal
+      style="--reveal-delay: 100ms"
+    >
+      <h2>Funding questions, organized</h2>
+      <div class="ref-funding-feature">
+        <BadgeDollarSign size={40} aria-hidden="true" />
+        <p>
+          Most families pay privately. Chris can help organize questions about
+          insurance, Veterans benefits, Masonic assistance, or other programs.
+        </p>
+      </div>
+      <ul>
+        <li>
+          <ShieldCheck size={18} /> No promise of eligibility or reimbursement
+        </li>
+        <li>
+          <CircleCheckBig size={18} /> Plan around confirmed benefits only
+        </li>
+      </ul>
+      <Button
+        href="/resources/how-families-pay-for-home-care/"
+        variant="text"
+        showArrow
+      >
+        Read the funding guide
+      </Button>
+    </article>
+  </div>
+
+  <div class="ref-container ref-counter-grid" data-reveal>
+    <div><strong>8</strong><span>Service areas</span></div>
+    <div><strong>6</strong><span>Support types</span></div>
+    <div><strong>1</strong><span>Personal care plan</span></div>
+    <div><strong>Free</strong><span>First consultation</span></div>
+  </div>
+</section>

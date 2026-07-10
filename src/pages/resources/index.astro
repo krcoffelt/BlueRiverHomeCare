@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import { ArrowRight } from "@lucide/astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/layout/Breadcrumbs.astro";
+
+const resources = (await getCollection("resources")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<BaseLayout
+  title="Home Care Resources for Families"
+  description="Read practical guides about home care needs, private pay, insurance, VA and Masonic assistance questions, and free care consultations."
+>
+  <section class="page-hero" data-cta-threshold>
+    <div class="container">
+      <Breadcrumbs
+        items={[{ label: "Home", href: "/" }, { label: "Resources" }]}
+      />
+      <p class="eyebrow">Resources</p>
+      <h1>Practical home care guides.</h1>
+      <p class="lead">
+        Get straightforward answers about care needs, private pay, possible
+        funding sources, and what to ask before your family makes a decision.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="guides-title">
+    <div class="container">
+      <h2 class="visually-hidden" id="guides-title">
+        Home care planning guides
+      </h2>
+      <div class="resource-list">
+        {
+          resources.map((resource) => (
+            <a href={`/resources/${resource.id}/`} class="resource-row">
+              <div>
+                <p class="eyebrow">{resource.data.eyebrow}</p>
+                <h2>{resource.data.title}</h2>
+                <p>{resource.data.description}</p>
+              </div>
+              <div class="resource-meta">
+                <span>{resource.data.readingTime}</span>
+                <ArrowRight size={22} aria-hidden="true" />
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

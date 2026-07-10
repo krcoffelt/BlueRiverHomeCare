@@ -1,0 +1,40 @@
+---
+import ContactForm from "../forms/ContactForm.astro";
+
+const steps = [
+  {
+    title: "Consultation",
+    body: "Tell Chris what has changed at home and what the family is carrying now.",
+  },
+  {
+    title: "Care plan",
+    body: "Agree on tasks, routines, scheduling, and private-pay expectations.",
+  },
+  {
+    title: "Start and adjust",
+    body: "Begin carefully and keep the plan open as needs and comfort change.",
+  },
+];
+---
+
+<section class="ref-appointment" aria-labelledby="ref-appointment-title">
+  <div class="ref-container ref-appointment-grid">
+    <div class="ref-form-panel ref-notched" data-reveal>
+      <h2 id="ref-appointment-title">Book a consultation</h2>
+      <ContactForm />
+    </div>
+    <div class="ref-work" data-reveal style="--reveal-delay: 100ms">
+      <h2>How we <span>work</span></h2>
+      <div class="ref-work-steps">
+        {
+          steps.map((step, index) => (
+            <details open={index === 0}>
+              <summary>{step.title}</summary>
+              <p>{step.body}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

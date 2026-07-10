@@ -1,0 +1,122 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
+import ContactForm from "../components/forms/ContactForm.astro";
+import Button from "../components/ui/Button.astro";
+import consultationImage from "../assets/scraped/consultation-support.jpg";
+import { consultationTopics } from "../data/services";
+import { site } from "../data/site";
+
+const schema = {
+  "@type": "Service",
+  "@id": "https://www.blueriverhomecare.com/consultation/#service",
+  name: "Free Care Consultation",
+  serviceType: "Home care consultation",
+  url: "https://www.blueriverhomecare.com/consultation/",
+  provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+  description:
+    "A free phone or in-person discussion with Chris about companionship, home-care tasks, scheduling, private-pay expectations, and funding questions.",
+};
+---
+
+<BaseLayout
+  title="Free Home Care Consultation in Belton, MO"
+  description="Call Chris for a free home care consultation about companionship, meals, laundry, cleaning, transfers, scheduling, and private-pay funding questions."
+  schema={schema}
+  image={consultationImage}
+  imageAlt="Family discussing home care options together"
+  hideCtaBand
+>
+  <section class="page-hero image-page-hero" data-cta-threshold>
+    <div class="container split">
+      <div>
+        <Breadcrumbs
+          items={[{ label: "Home", href: "/" }, { label: "Consultation" }]}
+        />
+        <p class="eyebrow">A free conversation with Chris</p>
+        <h1>Talk through what has changed at home.</h1>
+        <p class="lead">
+          You do not need to know which service to ask for. Start with what is
+          getting harder, what your parent wants, and what the family is
+          carrying.
+        </p>
+        <Button href={site.phoneMainHref}>Call Chris</Button>
+      </div>
+      <div class="media-frame page-hero-media">
+        <Image
+          src={consultationImage}
+          alt="Family care conversation at home"
+          loading="eager"
+          widths={[700, 1000, 1500]}
+          sizes="(max-width: 940px) 100vw, 48vw"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="expect-title">
+    <div class="container split editorial-split">
+      <div class="copy-stack">
+        <p class="eyebrow">What to expect</p>
+        <h2 id="expect-title">Start with a typical day at home.</h2>
+        <p class="lead">
+          The details that seem small often reveal where support would matter
+          most and how care can fit without disrupting everything else.
+        </p>
+      </div>
+      <ul class="topic-list">
+        {consultationTopics.map((topic) => <li>{topic}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="no-need-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="no-need-title">You do not need every answer yet.</h2>
+        <p>
+          The purpose of the consultation is to bring structure to the decision,
+          not add more pressure or paperwork.
+        </p>
+      </div>
+      <div class="plain-columns">
+        <div>
+          <h3>No perfect diagnosis</h3><p>
+            Describe the practical situation and the routines that have changed.
+          </p>
+        </div>
+        <div>
+          <h3>No finished schedule</h3><p>
+            Timing can be discussed after the priorities and preferences are
+            understood.
+          </p>
+        </div>
+        <div>
+          <h3>No commitment</h3><p>
+            Use the conversation to decide whether Blue River is an appropriate
+            next step.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section contact-section"
+    aria-labelledby="consultation-form-title"
+  >
+    <div class="container contact-layout">
+      <div class="copy-stack">
+        <p class="eyebrow">Schedule a free consultation</p>
+        <h2 id="consultation-form-title">Tell us how to reach you.</h2>
+        <p>
+          Share only the practical details needed to start. Do not include
+          Social Security numbers, insurance numbers, or detailed medical
+          history.
+        </p>
+      </div>
+      <ContactForm />
+    </div>
+  </section>
+</BaseLayout>

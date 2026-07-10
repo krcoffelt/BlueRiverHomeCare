@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import { ArrowRight } from "@lucide/astro";
+import consultationImage from "../../assets/scraped/consultation-support.jpg";
+import familyImage from "../../assets/scraped/about-family.jpg";
+import careImage from "../../assets/scraped/about-caregiver.jpg";
+
+const resources = [
+  {
+    title: "When is it time for home care?",
+    meta: "Care planning",
+    href: "/resources/when-is-it-time-for-home-care/",
+    image: careImage,
+  },
+  {
+    title: "How a care consultation works",
+    meta: "What to expect",
+    href: "/resources/how-a-care-consultation-works/",
+    image: consultationImage,
+  },
+  {
+    title: "How families pay for home care",
+    meta: "Private pay and benefits",
+    href: "/resources/how-families-pay-for-home-care/",
+    image: familyImage,
+  },
+];
+---
+
+<section
+  class="ref-section ref-resources"
+  aria-labelledby="ref-resources-title"
+>
+  <div class="ref-container">
+    <h2 id="ref-resources-title" data-reveal>Explore our resources</h2>
+    <div class="ref-resource-list">
+      {
+        resources.map((resource) => (
+          <a href={resource.href} class="ref-resource-row" data-reveal>
+            <div>
+              <h3>{resource.title}</h3>
+              <span>{resource.meta}</span>
+            </div>
+            <div class="ref-resource-preview">
+              <Image src={resource.image} alt="" widths={[300, 440]} />
+            </div>
+            <ArrowRight size={26} aria-hidden="true" />
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
