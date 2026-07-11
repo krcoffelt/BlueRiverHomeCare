@@ -2487,6 +2487,7 @@ h3 {
 }
 
 .ref-consultation-promise .ref-pill {
+  border-radius: var(--ref-pill);
   color: var(--ref-primary);
   background: var(--ref-soft-aqua);
 }
