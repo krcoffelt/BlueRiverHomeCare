@@ -5,7 +5,7 @@ Last updated: July 10, 2026
 ## Client Confirmation
 
 - [ ] Confirm whether the public site should show the main phone only or also Chris Jennen's direct number.
-- [ ] Confirm business hours and after-hours/on-call language.
+- [x] Confirm business hours: Monday–Friday, 9:00 AM–5:00 PM; weekends closed.
 - [ ] Approve the exact public task/service list and excluded services.
 - [ ] Confirm any licensing, bonding, insurance, caregiver screening, or training claims before publication.
 - [ ] Approve use of Chris Jennen's headshot. It remains stored in the repository but is not published in the expanded build.

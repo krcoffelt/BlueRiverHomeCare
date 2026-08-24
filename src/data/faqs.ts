@@ -37,7 +37,7 @@ export const faqs = [
   {
     question: "What areas do you serve?",
     answer:
-      "Blue River currently focuses on Belton, Raymore, Lee's Summit, Grandview, Raytown, Greenwood, Independence, and Kansas City, Missouri. Caregiver availability can affect how far the team can serve at a given time.",
+      "Blue River serves families across Cass, Jackson, Clay, and Platte counties, including Belton, Grandview, Greenwood, Independence, Kansas City, Kearney, Lake Lotawana, Lake Winnebago, Lee's Summit, Liberty, Loch Lloyd, Parkville, Platte City, Raymore, Raytown, Smithville, and Weatherby Lake. Caregiver availability can affect scheduling and geographic fit.",
   },
   {
     question: "Can care change if our needs change?",

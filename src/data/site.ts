@@ -19,6 +19,10 @@ export const site = {
     country: "US",
   },
   officeAddress: "8420 Clint Drive, Ste D, Belton, MO 64012",
+  businessHours: {
+    weekdays: "Monday–Friday, 9:00 AM–5:00 PM",
+    weekends: "Saturday–Sunday, closed",
+  },
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012",
   primaryContact: {
@@ -50,7 +54,6 @@ export const footerNavigation = [
 // Keep these out of public copy until Blue River confirms them.
 export const TODO_CONFIRM = [
   "Primary public phone strategy: main only or main and direct",
-  "Hours and after-hours language",
   "Licensing, bonding, insurance, screening, and training claims",
   "Approval to publish Chris Jennen's headshot",
   "Final social profile URLs",

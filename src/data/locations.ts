@@ -160,3 +160,30 @@ export const locations: ServiceLocation[] = [
 export const locationNames = locations.map(
   (location) => `${location.name}, MO`,
 );
+
+export const serviceCounties = [
+  "Cass County",
+  "Jackson County",
+  "Clay County",
+  "Platte County",
+] as const;
+
+export const serviceCities = [
+  "Belton",
+  "Grandview",
+  "Greenwood",
+  "Independence",
+  "Kansas City",
+  "Kearney",
+  "Lake Lotawana",
+  "Lake Winnebago",
+  "Lee's Summit",
+  "Liberty",
+  "Loch Lloyd",
+  "Parkville",
+  "Platte City",
+  "Raymore",
+  "Raytown",
+  "Smithville",
+  "Weatherby Lake",
+] as const;

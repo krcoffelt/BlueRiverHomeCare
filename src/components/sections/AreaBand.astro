@@ -1,15 +1,41 @@
 ---
 import { ArrowRight } from "@lucide/astro";
-import { locations } from "../../data/locations";
+import {
+  locations,
+  serviceCities,
+  serviceCounties,
+} from "../../data/locations";
+
+const locationByName = new Map(
+  locations.map((location) => [location.name, location]),
+);
 ---
 
-<div class="area-links">
-  {
-    locations.map((location) => (
-      <a href={`/service-areas/${location.slug}/`}>
-        <span>{location.name}</span>
-        <ArrowRight size={17} aria-hidden="true" />
-      </a>
-    ))
-  }
+<div class="service-area-groups">
+  <div class="service-area-group">
+    <p class="area-label">Counties we serve</p>
+    <div class="county-list">
+      {serviceCounties.map((county) => <span>{county}</span>)}
+    </div>
+  </div>
+
+  <div class="service-area-group">
+    <p class="area-label">Cities and communities we serve</p>
+    <div class="area-links">
+      {
+        serviceCities.map((city) => {
+          const location = locationByName.get(city);
+
+          return location ? (
+            <a href={`/service-areas/${location.slug}/`}>
+              <span>{city}</span>
+              <ArrowRight size={17} aria-hidden="true" />
+            </a>
+          ) : (
+            <span class="area-name">{city}</span>
+          );
+        })
+      }
+    </div>
+  </div>
 </div>

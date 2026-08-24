@@ -791,6 +791,41 @@ h3 {
   color: var(--color-muted);
 }
 
+.service-area-groups {
+  display: grid;
+  gap: 54px;
+}
+
+.service-area-group {
+  display: grid;
+  gap: 18px;
+}
+
+.area-label {
+  margin: 0;
+  color: #a9d4d9;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.county-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.county-list span,
+.area-links > .area-name {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  color: var(--color-white);
+  font-weight: 800;
+}
+
 .area-links {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1522,6 +1557,7 @@ h3 {
     gap: 24px;
   }
 
+  .county-list,
   .area-links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1666,6 +1702,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .county-list,
   .area-links {
     grid-template-columns: 1fr;
   }
@@ -3022,12 +3059,19 @@ h3 {
   padding: 40px;
 }
 
-.reference-inner .area-links a {
+.reference-inner .county-list span,
+.reference-inner .area-links a,
+.reference-inner .area-links > .area-name {
   min-height: 76px;
   padding: 18px 20px;
   border: 0;
   border-radius: var(--ref-radius);
+  color: var(--ref-ink);
   background: #fff;
+}
+
+.reference-inner .area-label {
+  color: var(--ref-primary-bright);
 }
 
 .reference-inner .button {

@@ -7,8 +7,8 @@ import { site } from "../../data/site";
 ---
 
 <BaseLayout
-  title="Home Care Service Areas Near Belton, MO"
-  description="Blue River Home Care serves Belton, Raymore, Lee's Summit, Grandview, Raytown, Greenwood, Independence, and Kansas City, subject to availability."
+  title="Home Care Service Areas in the Kansas City Metro"
+  description="Blue River Home Care serves families across Cass, Jackson, Clay, and Platte counties, including communities throughout the Kansas City metro."
 >
   <section class="page-hero" data-cta-threshold>
     <div class="container">
@@ -16,10 +16,11 @@ import { site } from "../../data/site";
         items={[{ label: "Home", href: "/" }, { label: "Service Areas" }]}
       />
       <p class="eyebrow">Service areas</p>
-      <h1>Home care near Belton, MO.</h1>
+      <h1>Home care across the Kansas City metro.</h1>
       <p class="lead">
         From its Belton office, Blue River plans non-medical home care and
-        companionship with families across eight Kansas City-area communities.
+        companionship with families across Cass, Jackson, Clay, and Platte
+        counties.
       </p>
     </div>
   </section>
@@ -27,10 +28,10 @@ import { site } from "../../data/site";
   <section class="section dark" aria-labelledby="cities-title">
     <div class="container">
       <div class="section-heading">
-        <h2 id="cities-title">Home care service areas.</h2>
+        <h2 id="cities-title">Counties and communities we serve.</h2>
         <p>
-          Choose your city for local care-planning guidance, then confirm the
-          address, schedule, and current caregiver availability.
+          Find your community below, then call to confirm the care address,
+          schedule, and current caregiver availability.
         </p>
       </div>
       <AreaBand />
@@ -50,6 +51,7 @@ import { site } from "../../data/site";
       <div class="location-detail">
         <p><strong>{site.legalName}</strong></p>
         <p>{site.officeAddress}</p>
+        <p>{site.businessHours.weekdays}<br />{site.businessHours.weekends}</p>
         <p>
           <a href={site.phoneMainHref}>{site.phoneMainFormatted}</a><br /><a
             href={`mailto:${site.email}`}>{site.email}</a
