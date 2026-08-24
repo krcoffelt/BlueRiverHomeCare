@@ -1,11 +1,15 @@
 {
   "name": "Blue River Home Care",
   "short_name": "Blue River",
-  "description": "Local, non-medical home care and companionship for older adults and families in Belton and nearby Kansas City, Missouri communities.",
+  "description": "Local, non-medical home care and companionship for older adults and families across the Kansas City metro, from our office in Belton, Missouri.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
+  "lang": "en-US",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0d4f62",
+  "categories": ["health", "lifestyle"],
   "icons": [
     {
       "src": "/icon-192.png",
@@ -17,7 +21,7 @@
       "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
