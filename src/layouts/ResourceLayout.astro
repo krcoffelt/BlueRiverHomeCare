@@ -11,6 +11,13 @@ interface Props {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const canonicalPath = `/resources/${entry.id}/`;
+const articleUrl = new URL(canonicalPath, "https://www.blueriverhomecare.com").toString();
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
 const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
@@ -34,6 +41,24 @@ const breadcrumbSchema = {
     },
   ],
 };
+const articleSchema = {
+  "@type": "Article",
+  "@id": `${articleUrl}#article`,
+  headline: entry.data.title,
+  description: entry.data.description,
+  url: articleUrl,
+  mainEntityOfPage: articleUrl,
+  datePublished: entry.data.publishedAt.toISOString(),
+  dateModified: entry.data.updatedAt.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+    jobTitle: "Director of Operations",
+    worksFor: { "@id": "https://www.blueriverhomecare.com/#business" },
+  },
+  publisher: { "@id": "https://www.blueriverhomecare.com/#business" },
+  citation: entry.data.sources.map((source) => source.url),
+};
 ---
 
 <BaseLayout
@@ -41,7 +66,7 @@ const breadcrumbSchema = {
   description={entry.data.description}
   canonicalPath={canonicalPath}
   pageType="article"
-  schema={breadcrumbSchema}
+  schema={[breadcrumbSchema, articleSchema]}
 >
   <section class="page-hero resource-hero" data-cta-threshold>
     <div class="narrow-container">
@@ -55,12 +80,33 @@ const breadcrumbSchema = {
       <p class="eyebrow">{entry.data.eyebrow}</p>
       <h1>{entry.data.title}</h1>
       <p class="lead">{entry.data.description}</p>
-      <span class="reading-time">{entry.data.readingTime}</span>
+      <div class="resource-meta-line">
+        <span>By {entry.data.author}</span>
+        <span>Updated {dateFormatter.format(entry.data.updatedAt)}</span>
+        <span>{entry.data.readingTime}</span>
+      </div>
     </div>
   </section>
   <article class="section article-body">
     <div class="article-container">
       <Content />
+      <section class="article-sources" aria-labelledby="article-sources-title">
+        <h2 id="article-sources-title">Sources</h2>
+        <p>
+          Blue River uses primary public sources so families can verify benefit,
+          coverage, and care-planning information directly.
+        </p>
+        <ul>
+          {
+            entry.data.sources.map((source) => (
+              <li>
+                <a href={source.url}>{source.title}</a>
+                <span> — {source.publisher}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
     </div>
   </article>
 </BaseLayout>

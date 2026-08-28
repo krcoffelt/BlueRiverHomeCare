@@ -5,11 +5,23 @@ description: "Learn how private-pay home care works, how families build care pla
 eyebrow: "Payment basics"
 order: 2
 readingTime: "4 minute read"
+author: "Chris Jennen"
+publishedAt: 2026-07-10
+updatedAt: 2026-08-28
+sources:
+  - title: "Home Health Services Coverage"
+    publisher: "Medicare.gov"
+    url: "https://www.medicare.gov/coverage/home-health-services"
+  - title: "Home & Community-Based Services"
+    publisher: "Missouri Department of Health and Senior Services"
+    url: "https://health.mo.gov/senior-disability-services/home-community-based-services"
 ---
 
 Private-pay home care means the client or family pays for caregiving out of pocket. It is different from assuming that Medicare, health insurance, or another program will automatically cover help at home.
 
 Understanding that distinction early helps families ask clearer questions and avoid planning around coverage that has not been confirmed.
+
+The short answer: private-pay home care is paid directly by the client or family. Medicare says it does not cover custodial or personal care when that is the only care needed. Missouri does operate separate Home and Community-Based Services programs for people who meet program requirements, but eligibility and authorized services must be confirmed by the state.
 
 ## What private-pay home care covers
 

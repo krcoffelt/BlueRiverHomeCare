@@ -5,11 +5,29 @@ description: "Understand private-pay home care costs and the questions to ask ab
 eyebrow: "Paying for care"
 order: 3
 readingTime: "5 minute read"
+author: "Chris Jennen"
+publishedAt: 2026-07-10
+updatedAt: 2026-08-28
+sources:
+  - title: "Long-Term Care Insurance"
+    publisher: "Missouri Department of Commerce and Insurance"
+    url: "https://insurance.mo.gov/long-term-care-insurance"
+  - title: "Home Health Services Coverage"
+    publisher: "Medicare.gov"
+    url: "https://www.medicare.gov/coverage/home-health-services"
+  - title: "Aid and Attendance or Housebound Benefits"
+    publisher: "U.S. Department of Veterans Affairs"
+    url: "https://www.va.gov/pension/aid-attendance-housebound/"
+  - title: "Financial Assistance Programs"
+    publisher: "Masonic Home of Missouri"
+    url: "https://www.mohome.org/financial-programs/"
 ---
 
 One of the first questions families ask is, **"Can we afford the help Mom or Dad needs?"** You deserve a clear picture of the likely cost before making a commitment.
 
 Blue River primarily provides private-pay home care, which means the client or family pays for care directly. Some families may also have an insurance policy or benefit program that helps with part of the cost. The key is knowing what applies to your loved one before you count on it.
+
+Medicare does not pay for custodial or personal care when that is the only care a person needs. Medicare may cover limited home health aide care when the person also qualifies for covered skilled services, so families should confirm the exact benefit rather than assume that non-medical home care is covered.
 
 ## Start with the help your family needs
 

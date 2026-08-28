@@ -5,17 +5,31 @@ description: "Learn the signs an aging parent may need home care, from harder da
 eyebrow: "Planning guide"
 order: 1
 readingTime: "5 minute read"
+author: "Chris Jennen"
+publishedAt: 2026-07-10
+updatedAt: 2026-08-28
+sources:
+  - title: "Aging in Place: Growing Older at Home"
+    publisher: "National Institute on Aging"
+    url: "https://www.nia.nih.gov/health/aging-place-growing-older-home"
+  - title: "In-Home Services"
+    publisher: "Missouri Department of Health and Senior Services"
+    url: "https://health.mo.gov/partners-providers/area-agencies-aging/home-services"
 ---
 
 The right time to ask about home care is not always marked by one dramatic event. More often, a family notices small changes adding up: a routine takes longer, one spouse is carrying more responsibility, or an adult child is spending more time coordinating from another household.
 
 You do not need to wait for a crisis before talking through options.
 
+The clearest signal is usually a pattern: daily tasks are getting harder, one family caregiver is carrying an unsustainable load, or the older adult wants help preserving independence at home.
+
 ## Look for changes in the daily routine
 
 Start with an ordinary day. Which parts still work well? Which parts depend on one exhausted family member? Where does the person needing help feel frustrated, rushed, or less confident?
 
 Activities of daily living are useful to discuss because they reveal where practical support may matter. The goal is not to label someone as incapable. It is to understand which routines are becoming difficult and how the person wants those routines handled.
+
+The National Institute on Aging recommends planning ahead for aging in place and considering needs such as personal care, household chores, meals, transportation, and safety. Missouri's senior-services guidance similarly defines daily-living needs to include tasks such as eating, bathing, grooming, walking, dressing, transfers, toileting, shopping, meal preparation, housekeeping, and transportation.
 
 ## Notice family caregiver strain
 

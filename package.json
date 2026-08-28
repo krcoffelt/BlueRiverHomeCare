@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "audit:seo": "node scripts/seo-audit.mjs dist",
     "check": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

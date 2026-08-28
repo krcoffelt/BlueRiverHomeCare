@@ -11,6 +11,18 @@ const resources = defineCollection({
     eyebrow: z.string(),
     order: z.number(),
     readingTime: z.string(),
+    author: z.string(),
+    publishedAt: z.coerce.date(),
+    updatedAt: z.coerce.date(),
+    sources: z
+      .array(
+        z.object({
+          title: z.string(),
+          url: z.url(),
+          publisher: z.string(),
+        }),
+      )
+      .min(1),
   }),
 });
 

@@ -5,6 +5,13 @@ description: "Learn what happens during a free home care consultation, what to d
 eyebrow: "First conversation"
 order: 4
 readingTime: "4 minute read"
+author: "Chris Jennen"
+publishedAt: 2026-07-10
+updatedAt: 2026-08-28
+sources:
+  - title: "HCBS Referrals, Requests & Eligibility Determination"
+    publisher: "Missouri Department of Health and Senior Services"
+    url: "https://health.mo.gov/partners-providers/home-community-based-services-provider-information/hcbs-referrals-requests-eligibility-determination"
 ---
 
 A home care consultation should make the next decision clearer. It is not a test, and your family does not need to arrive with a completed care plan.
@@ -26,6 +33,8 @@ You can include the people who should hear the same information. There is no nee
 ## Discuss the care plan and schedule
 
 If private-pay caregiving appears to fit, Blue River can explain how the client and family build the care plan together. The proposed schedule comes from that plan and the client's preferences.
+
+Person-centered planning is also central to Missouri's public Home and Community-Based Services process. The state explains that eligible participants develop a person-centered care plan after assessment. Blue River's private-pay consultation is separate from that public program, but the same practical principle applies: the plan should begin with the person, their needs, and their choices.
 
 The conversation can also cover private-pay expectations and questions about an existing insurance policy, Veterans or survivor benefits, Masonic assistance, or another subsidy program. The insurer or program decides eligibility and coverage.
 

@@ -1,0 +1,1377 @@
+{
+  "generatedAt": "2026-08-28T15:21:56.890Z",
+  "root": "/Users/kylecoffelt/Documents/BlueRiverHomeCare/dist",
+  "summary": {
+    "pages": 26,
+    "indexablePages": 23,
+    "missingTitles": 0,
+    "duplicateTitles": 0,
+    "missingDescriptions": 0,
+    "missingCanonicals": 0,
+    "invalidH1Counts": 0,
+    "brokenInternalLinks": 0,
+    "pagesWithoutStructuredData": 0,
+    "editorialPagesWithoutExternalSources": 0
+  },
+  "duplicateTitles": [],
+  "brokenLinks": [],
+  "pages": [
+    {
+      "route": "/",
+      "title": "Kansas City Metro Home Care | Blue River Home Care",
+      "titleLength": 50,
+      "description": "Local home care and companionship for older adults and families across the Kansas City metro, including help with meals, cleaning, transfers, and daily routines.",
+      "descriptionLength": 161,
+      "canonical": "https://www.blueriverhomecare.com/",
+      "h1s": [
+        "Home care that feels right at home."
+      ],
+      "wordCount": 552,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/companion-care/",
+        "/services/in-home-caregiving/",
+        "/resources/how-families-pay-for-home-care/",
+        "/privacy/",
+        "/resources/when-is-it-time-for-home-care/",
+        "/resources/how-a-care-consultation-works/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "WebSite",
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/404.html",
+      "title": "Page Not Found | Blue River Home Care",
+      "titleLength": 37,
+      "description": "The requested page could not be found.",
+      "descriptionLength": 38,
+      "canonical": "https://www.blueriverhomecare.com/404/",
+      "h1s": [
+        "That page is not here."
+      ],
+      "wordCount": 17,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": true,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 0
+    },
+    {
+      "route": "/about/",
+      "title": "About Our Belton Home Care Team | Blue River Home Care",
+      "titleLength": 54,
+      "description": "Meet the local team behind Blue River Home Care in Belton, MO, and learn how clients and families shape non-medical home care plans together.",
+      "descriptionLength": 141,
+      "canonical": "https://www.blueriverhomecare.com/about/",
+      "h1s": [
+        "Home care planned around your family."
+      ],
+      "wordCount": 263,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/book-a-consultation/",
+      "title": "Redirecting to: /consultation/",
+      "titleLength": 30,
+      "description": "",
+      "descriptionLength": 0,
+      "canonical": "https://www.blueriverhomecare.com/consultation/",
+      "h1s": [],
+      "wordCount": 0,
+      "internalLinks": [
+        "/consultation/"
+      ],
+      "externalLinks": [],
+      "sourceLinks": [],
+      "hasNoindex": true,
+      "isRedirect": true,
+      "schemaTypes": [],
+      "inboundLinkCount": 0
+    },
+    {
+      "route": "/consultation/",
+      "title": "Free Home Care Consultation in Belton, MO | Blue River Home Care",
+      "titleLength": 64,
+      "description": "Schedule a free home care consultation with Chris about companionship, daily routines, scheduling, payment expectations, and funding questions.",
+      "descriptionLength": 143,
+      "canonical": "https://www.blueriverhomecare.com/consultation/",
+      "h1s": [
+        "Talk through what has changed at home."
+      ],
+      "wordCount": 302,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/privacy/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 25
+    },
+    {
+      "route": "/contact/",
+      "title": "Contact Our Belton Home Care Team | Blue River Home Care",
+      "titleLength": 56,
+      "description": "Call Chris Jennen at Blue River Home Care in Belton, MO, about companion care, in-home caregiving, scheduling, payment, and funding questions.",
+      "descriptionLength": 142,
+      "canonical": "https://www.blueriverhomecare.com/contact/",
+      "h1s": [
+        "Tell Chris what has changed at home."
+      ],
+      "wordCount": 193,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/privacy/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/faq/",
+      "title": "Home Care FAQ | Blue River Home Care",
+      "titleLength": 36,
+      "description": "Get answers about non-medical home care, companion care, private duty, costs, private pay, schedules, funding questions, and service areas.",
+      "descriptionLength": 139,
+      "canonical": "https://www.blueriverhomecare.com/faq/",
+      "h1s": [
+        "Home care questions, answered."
+      ],
+      "wordCount": 604,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/privacy/",
+      "title": "Website Privacy and Contact Consent | Blue River Home Care",
+      "titleLength": 58,
+      "description": "Read how Blue River Home Care collects and uses website inquiry information, handles service-provider access, and manages phone, email, and text consent.",
+      "descriptionLength": 153,
+      "canonical": "https://www.blueriverhomecare.com/privacy/",
+      "h1s": [
+        "Website privacy and contact consent."
+      ],
+      "wordCount": 206,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/resources/",
+      "title": "Home Care Resources for Families | Blue River Home Care",
+      "titleLength": 55,
+      "description": "Read practical guides about aging-parent care needs, companion care, home care costs, funding questions, and free care consultations.",
+      "descriptionLength": 133,
+      "canonical": "https://www.blueriverhomecare.com/resources/",
+      "h1s": [
+        "Practical home care guides."
+      ],
+      "wordCount": 171,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/when-is-it-time-for-home-care/",
+        "/resources/private-pay-home-care/",
+        "/resources/how-families-pay-for-home-care/",
+        "/resources/how-a-care-consultation-works/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/resources/how-a-care-consultation-works/",
+      "title": "Home Care Consultation: What to Expect | Blue River Home Care",
+      "titleLength": 61,
+      "description": "Learn what happens during a free home care consultation, what to discuss, who can join, and how Blue River identifies a practical next step.",
+      "descriptionLength": 140,
+      "canonical": "https://www.blueriverhomecare.com/resources/how-a-care-consultation-works/",
+      "h1s": [
+        "How a Home Care Consultation Works"
+      ],
+      "wordCount": 432,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://health.mo.gov/partners-providers/home-community-based-services-provider-information/hcbs-referrals-requests-eligibility-determination",
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://health.mo.gov/partners-providers/home-community-based-services-provider-information/hcbs-referrals-requests-eligibility-determination"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem",
+        "Article",
+        "Person"
+      ],
+      "inboundLinkCount": 2
+    },
+    {
+      "route": "/resources/how-families-pay-for-home-care/",
+      "title": "How to Pay for Home Care | Blue River Home Care",
+      "titleLength": 47,
+      "description": "Understand private-pay home care costs and the questions to ask about long-term care insurance, Veterans benefits, Masonic assistance, and other programs.",
+      "descriptionLength": 154,
+      "canonical": "https://www.blueriverhomecare.com/resources/how-families-pay-for-home-care/",
+      "h1s": [
+        "How Families Can Pay for Home Care"
+      ],
+      "wordCount": 660,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://insurance.mo.gov/long-term-care-insurance",
+        "https://www.va.gov/pension/aid-attendance-housebound/",
+        "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/",
+        "https://www.mohome.org/financial-programs/",
+        "https://www.medicare.gov/coverage/home-health-services",
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://insurance.mo.gov/long-term-care-insurance",
+        "https://www.va.gov/pension/aid-attendance-housebound/",
+        "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/",
+        "https://www.mohome.org/financial-programs/",
+        "https://www.medicare.gov/coverage/home-health-services"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem",
+        "Article",
+        "Person"
+      ],
+      "inboundLinkCount": 13
+    },
+    {
+      "route": "/resources/private-pay-home-care/",
+      "title": "Private-Pay Home Care: What It Means | Blue River Home Care",
+      "titleLength": 59,
+      "description": "Learn how private-pay home care works, how families build care plans, how schedules are decided, and which payment questions to ask before care begins.",
+      "descriptionLength": 151,
+      "canonical": "https://www.blueriverhomecare.com/resources/private-pay-home-care/",
+      "h1s": [
+        "What Private-Pay Home Care Means"
+      ],
+      "wordCount": 459,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.medicare.gov/coverage/home-health-services",
+        "https://health.mo.gov/senior-disability-services/home-community-based-services",
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://www.medicare.gov/coverage/home-health-services",
+        "https://health.mo.gov/senior-disability-services/home-community-based-services"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem",
+        "Article",
+        "Person"
+      ],
+      "inboundLinkCount": 1
+    },
+    {
+      "route": "/resources/when-is-it-time-for-home-care/",
+      "title": "Signs an Aging Parent May Need Home Care | Blue River Home Care",
+      "titleLength": 63,
+      "description": "Learn the signs an aging parent may need home care, from harder daily routines and loneliness to family caregiver strain, before a crisis.",
+      "descriptionLength": 138,
+      "canonical": "https://www.blueriverhomecare.com/resources/when-is-it-time-for-home-care/",
+      "h1s": [
+        "When Is It Time for Home Care?"
+      ],
+      "wordCount": 512,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.nia.nih.gov/health/aging-place-growing-older-home",
+        "https://health.mo.gov/partners-providers/area-agencies-aging/home-services",
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://www.nia.nih.gov/health/aging-place-growing-older-home",
+        "https://health.mo.gov/partners-providers/area-agencies-aging/home-services"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem",
+        "Article",
+        "Person"
+      ],
+      "inboundLinkCount": 2
+    },
+    {
+      "route": "/service-areas/",
+      "title": "Home Care Service Areas in the Kansas City Metro | Blue River Home Care",
+      "titleLength": 71,
+      "description": "Blue River Home Care serves families across Cass, Jackson, Clay, and Platte counties, including communities throughout the Kansas City metro.",
+      "descriptionLength": 141,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/",
+      "h1s": [
+        "Home care across the Kansas City metro."
+      ],
+      "wordCount": 148,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/service-areas/belton-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/raytown-mo/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/belton-mo/",
+      "title": "Belton Home Care Services | Blue River Home Care",
+      "titleLength": 48,
+      "description": "Explore local home care in Belton, MO. Blue River provides companionship and practical in-home support planned with clients and families.",
+      "descriptionLength": 137,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/belton-mo/",
+      "h1s": [
+        "In-home caregiving in Belton, MO."
+      ],
+      "wordCount": 472,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/grandview-mo/",
+      "title": "Home Care in Grandview, MO | Blue River Home Care",
+      "titleLength": 49,
+      "description": "Explore home care in Grandview, MO for companionship and practical daily support. Start with a free consultation about family concerns and availability.",
+      "descriptionLength": 152,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/grandview-mo/",
+      "h1s": [
+        "In-home caregiving in Grandview, MO."
+      ],
+      "wordCount": 439,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/greenwood-mo/",
+      "title": "Home Care in Greenwood, MO | Blue River Home Care",
+      "titleLength": 49,
+      "description": "Explore home care in Greenwood, MO, with companionship and a collaborative care plan shaped around familiar routines and client preferences.",
+      "descriptionLength": 140,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/greenwood-mo/",
+      "h1s": [
+        "In-home caregiving in Greenwood, MO."
+      ],
+      "wordCount": 443,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/independence-mo/",
+      "title": "Home Care in Independence, MO | Blue River Home Care",
+      "titleLength": 52,
+      "description": "Home care for Independence, MO families sorting through companionship, daily support, and care choices. Start with a free consultation.",
+      "descriptionLength": 135,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/independence-mo/",
+      "h1s": [
+        "In-home caregiving in Independence, MO."
+      ],
+      "wordCount": 443,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/kansas-city-mo/",
+      "title": "Home Care in Kansas City, MO | Blue River Home Care",
+      "titleLength": 51,
+      "description": "Home care for Kansas City, MO families balancing distance, work, and changing needs, with companionship and practical support at home.",
+      "descriptionLength": 134,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/kansas-city-mo/",
+      "h1s": [
+        "In-home caregiving in Kansas City, MO."
+      ],
+      "wordCount": 463,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/lees-summit-mo/",
+      "title": "Home Care in Lee s Summit, MO | Blue River Home Care",
+      "titleLength": 52,
+      "description": "Explore home care in Lee's Summit, MO, with companionship and practical support built around the client's routines and family needs.",
+      "descriptionLength": 132,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/lees-summit-mo/",
+      "h1s": [
+        "In-home caregiving in Lee s Summit, MO."
+      ],
+      "wordCount": 475,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/raymore-mo/",
+      "title": "Home Care in Raymore, MO | Blue River Home Care",
+      "titleLength": 47,
+      "description": "Home care for Raymore, MO families who want to plan carefully around companionship, daily routines, scheduling, and family support.",
+      "descriptionLength": 131,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/raymore-mo/",
+      "h1s": [
+        "In-home caregiving in Raymore, MO."
+      ],
+      "wordCount": 437,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/service-areas/raytown-mo/",
+      "title": "Home Care in Raytown, MO | Blue River Home Care",
+      "titleLength": 47,
+      "description": "Home care for Raytown, MO families, planned with the client and family around companionship, routines, timing, and practical support.",
+      "descriptionLength": 133,
+      "canonical": "https://www.blueriverhomecare.com/service-areas/raytown-mo/",
+      "h1s": [
+        "In-home caregiving in Raytown, MO."
+      ],
+      "wordCount": 437,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/services/",
+      "title": "Home Care Services in Belton, MO | Blue River Home Care",
+      "titleLength": 55,
+      "description": "Explore non-medical home care services in Belton, MO, including companion care, meal help, laundry, cleaning, transfers, and daily living support.",
+      "descriptionLength": 146,
+      "canonical": "https://www.blueriverhomecare.com/services/",
+      "h1s": [
+        "Home care that fits daily life."
+      ],
+      "wordCount": 235,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/companion-care/",
+        "/services/in-home-caregiving/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/services/companion-care/",
+      "title": "Companion Care in Belton, MO | Blue River Home Care",
+      "titleLength": 51,
+      "description": "Companion care for seniors and older adults in Belton, MO, with conversation, familiar activities, daily routines, and support for families.",
+      "descriptionLength": 140,
+      "canonical": "https://www.blueriverhomecare.com/services/companion-care/",
+      "h1s": [
+        "Companion care that brings connection home."
+      ],
+      "wordCount": 268,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/services/in-home-caregiving/",
+      "title": "In-Home Caregiving in Belton, MO | Blue River Home Care",
+      "titleLength": 55,
+      "description": "Find an in-home caregiver in Belton, MO for companionship, meals, laundry, cleaning, transfers, and support with daily living routines.",
+      "descriptionLength": 135,
+      "canonical": "https://www.blueriverhomecare.com/services/in-home-caregiving/",
+      "h1s": [
+        "In-home caregiving in Belton, MO."
+      ],
+      "wordCount": 239,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/resources/how-families-pay-for-home-care/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": false,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "inboundLinkCount": 24
+    },
+    {
+      "route": "/thank-you/",
+      "title": "Thank You | Blue River Home Care",
+      "titleLength": 32,
+      "description": "Your Blue River Home Care consultation inquiry has been received and is ready for follow-up.",
+      "descriptionLength": 92,
+      "canonical": "https://www.blueriverhomecare.com/thank-you/",
+      "h1s": [
+        "Thank you for reaching out."
+      ],
+      "wordCount": 36,
+      "internalLinks": [
+        "/",
+        "/about/",
+        "/service-areas/",
+        "/resources/",
+        "/faq/",
+        "/contact/",
+        "/services/",
+        "/consultation/",
+        "/services/in-home-caregiving/",
+        "/services/companion-care/",
+        "/privacy/",
+        "/service-areas/belton-mo/",
+        "/service-areas/kansas-city-mo/",
+        "/service-areas/lees-summit-mo/",
+        "/service-areas/raymore-mo/",
+        "/service-areas/grandview-mo/",
+        "/service-areas/raytown-mo/",
+        "/service-areas/greenwood-mo/",
+        "/service-areas/independence-mo/"
+      ],
+      "externalLinks": [
+        "https://www.google.com/maps/search/?api=1&amp;query=8420%20Clint%20Drive%20Ste%20D%20Belton%20MO%2064012"
+      ],
+      "sourceLinks": [],
+      "hasNoindex": true,
+      "isRedirect": false,
+      "schemaTypes": [
+        "LocalBusiness",
+        "PostalAddress",
+        "OpeningHoursSpecification",
+        "ContactPoint",
+        "AdministrativeArea",
+        "City",
+        "Offer",
+        "Service"
+      ],
+      "inboundLinkCount": 0
+    }
+  ]
+}

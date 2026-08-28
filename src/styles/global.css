@@ -500,6 +500,29 @@ h3 {
   margin-left: max(20px, calc((100% - 1160px) / 2));
 }
 
+.resource-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.resource-meta-line span + span::before {
+  content: "•";
+  margin-right: 1rem;
+}
+
+.article-sources {
+  border-top: 1px solid var(--color-line);
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.article-sources li + li {
+  margin-top: 0.65rem;
+}
+
 .reading-time {
   display: inline-block;
   margin-top: 18px;
