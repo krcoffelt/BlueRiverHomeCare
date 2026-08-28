@@ -1,5 +1,6 @@
 ---
-const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "";
+const measurementId =
+  import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-J3QRJ5DGEF";
 ---
 
 <script is:inline define:vars={{ measurementId }}>
@@ -36,13 +37,29 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "";
         );
       });
 
-      document
-        .querySelector('form[name="care-inquiry"]')
-        ?.addEventListener("submit", () =>
-          track("consultation_form_submit", {
-            page_path: window.location.pathname,
-          }),
-        );
+      const inquiryForm = document.querySelector('form[name="care-inquiry"]');
+
+      if (inquiryForm) {
+        const formParameters = {
+          form_id: inquiryForm.id || inquiryForm.getAttribute("name"),
+          form_name: inquiryForm.getAttribute("name"),
+          form_destination: inquiryForm.action,
+          page_path: window.location.pathname,
+        };
+        let formStarted = false;
+
+        inquiryForm.addEventListener("focusin", () => {
+          if (formStarted) return;
+
+          formStarted = true;
+          track("form_start", formParameters);
+        });
+
+        inquiryForm.addEventListener("submit", () => {
+          track("form_submit", formParameters);
+          track("consultation_form_submit", formParameters);
+        });
+      }
 
       if (window.location.pathname === "/thank-you/") {
         track("generate_lead", { method: "care_inquiry" });
