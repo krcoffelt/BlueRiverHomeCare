@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
 import BaseLayout from "./BaseLayout.astro";
@@ -11,7 +12,10 @@ interface Props {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const canonicalPath = `/resources/${entry.id}/`;
-const articleUrl = new URL(canonicalPath, "https://www.blueriverhomecare.com").toString();
+const articleUrl = new URL(
+  canonicalPath,
+  "https://www.blueriverhomecare.com",
+).toString();
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "long",
   day: "numeric",
@@ -57,18 +61,40 @@ const articleSchema = {
     worksFor: { "@id": "https://www.blueriverhomecare.com/#business" },
   },
   publisher: { "@id": "https://www.blueriverhomecare.com/#business" },
+  ...(entry.data.image && {
+    image: new URL(
+      entry.data.image.src,
+      "https://www.blueriverhomecare.com",
+    ).toString(),
+  }),
   citation: entry.data.sources.map((source) => source.url),
 };
+const faqSchema = entry.data.faqs?.length
+  ? {
+      "@type": "FAQPage",
+      "@id": `${articleUrl}#faq`,
+      mainEntity: entry.data.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    }
+  : undefined;
 ---
 
 <BaseLayout
   title={entry.data.seoTitle}
   description={entry.data.description}
   canonicalPath={canonicalPath}
+  image={entry.data.image}
+  imageAlt={entry.data.imageAlt}
   pageType="article"
-  schema={[breadcrumbSchema, articleSchema]}
+  schema={[breadcrumbSchema, articleSchema, ...(faqSchema ? [faqSchema] : [])]}
 >
-  <section class="page-hero resource-hero" data-cta-threshold>
+  <section class="page-hero resource-hero" id="article-top" data-cta-threshold>
     <div class="narrow-container">
       <Breadcrumbs
         items={[
@@ -85,11 +111,36 @@ const articleSchema = {
         <span>Updated {dateFormatter.format(entry.data.updatedAt)}</span>
         <span>{entry.data.readingTime}</span>
       </div>
+      {
+        entry.data.image && (
+          <Image
+            class="resource-featured-image"
+            src={entry.data.image}
+            alt={entry.data.imageAlt ?? ""}
+            width={1200}
+            height={630}
+            loading="eager"
+          />
+        )
+      }
     </div>
   </section>
   <article class="section article-body">
     <div class="article-container">
       <Content />
+      {
+        entry.data.faqs?.length && (
+          <section class="article-faq" aria-labelledby="article-faq-title">
+            <h2 id="article-faq-title">Frequently asked questions</h2>
+            {entry.data.faqs.map((faq) => (
+              <details>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))}
+          </section>
+        )
+      }
       <section class="article-sources" aria-labelledby="article-sources-title">
         <h2 id="article-sources-title">Sources</h2>
         <p>

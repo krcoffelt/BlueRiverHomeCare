@@ -513,6 +513,14 @@ h3 {
   margin-right: 1rem;
 }
 
+.resource-featured-image {
+  width: min(960px, 100%);
+  height: auto;
+  margin-top: 36px;
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(16, 43, 52, 0.14);
+}
+
 .article-sources {
   border-top: 1px solid var(--color-line);
   margin-top: 3rem;
@@ -1063,6 +1071,51 @@ h3 {
 .article-container a {
   color: var(--color-river-dark);
   font-weight: 750;
+}
+
+.article-container table {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.article-container th,
+.article-container td {
+  padding: 12px 14px;
+  border: 1px solid var(--color-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-container th {
+  color: var(--color-river-dark);
+  background: var(--color-mist);
+}
+
+.article-faq {
+  margin-top: 56px;
+  padding-top: 8px;
+}
+
+.article-faq details {
+  border-top: 1px solid var(--color-line);
+  padding: 18px 0;
+}
+
+.article-faq details:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.article-faq summary {
+  color: var(--color-river-dark);
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.article-faq details p {
+  margin-top: 12px;
 }
 
 .location-copy h2 {
