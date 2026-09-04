@@ -3,41 +3,63 @@ const measurementId =
   import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-J3QRJ5DGEF";
 ---
 
-<script is:inline define:vars={{ measurementId }}>
+<meta name="ga-measurement-id" content={measurementId} />
+
+<script>
+  type AnalyticsWindow = Window &
+    typeof globalThis & {
+      dataLayer: unknown[][];
+      gtag: (...args: unknown[]) => void;
+    };
+
+  const analyticsWindow = window as AnalyticsWindow;
+  const measurementId = document
+    .querySelector('meta[name="ga-measurement-id"]')
+    ?.getAttribute("content");
+
   if (measurementId) {
     const analyticsScript = document.createElement("script");
     analyticsScript.async = true;
     analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
     document.head.appendChild(analyticsScript);
 
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
+    analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
+    analyticsWindow.gtag = (...args: unknown[]) => {
+      analyticsWindow.dataLayer.push(args);
     };
-    window.gtag("js", new Date());
-    window.gtag("config", measurementId);
+    analyticsWindow.gtag("js", new Date());
+    analyticsWindow.gtag("config", measurementId);
 
     document.addEventListener("DOMContentLoaded", () => {
-      const track = (eventName, parameters = {}) => {
-        window.gtag("event", eventName, parameters);
+      const track = (
+        eventName: string,
+        parameters: Record<string, unknown> = {},
+      ) => {
+        analyticsWindow.gtag("event", eventName, parameters);
       };
 
-      document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
-        link.addEventListener("click", () =>
-          track("phone_click", { link_url: link.href }),
-        );
-      });
+      document
+        .querySelectorAll<HTMLAnchorElement>('a[href^="tel:"]')
+        .forEach((link) => {
+          link.addEventListener("click", () =>
+            track("phone_click", { link_url: link.href }),
+          );
+        });
 
-      document.querySelectorAll('a[href="/consultation/"]').forEach((link) => {
-        link.addEventListener("click", () =>
-          track("consultation_click", {
-            link_text: link.textContent?.trim(),
-            page_path: window.location.pathname,
-          }),
-        );
-      });
+      document
+        .querySelectorAll<HTMLAnchorElement>('a[href="/consultation/"]')
+        .forEach((link) => {
+          link.addEventListener("click", () =>
+            track("consultation_click", {
+              link_text: link.textContent?.trim(),
+              page_path: window.location.pathname,
+            }),
+          );
+        });
 
-      const inquiryForm = document.querySelector('form[name="care-inquiry"]');
+      const inquiryForm = document.querySelector<HTMLFormElement>(
+        'form[name="care-inquiry"]',
+      );
 
       if (inquiryForm) {
         const formParameters = {

@@ -11,11 +11,11 @@ const canonicalPath = "/services/in-home-caregiving/";
 const schema = [
   {
     "@type": "Service",
-    "@id": `https://www.blueriverhomecare.com${canonicalPath}#service`,
+    "@id": `${site.url}${canonicalPath}#service`,
     name: "In-Home Caregiving",
     serviceType: "In-home caregiving",
-    url: `https://www.blueriverhomecare.com${canonicalPath}`,
-    provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+    url: `${site.url}${canonicalPath}`,
+    provider: { "@id": `${site.url}/#business` },
     areaServed: "Belton and the Kansas City, Missouri area",
     description:
       "Non-medical home care with companionship, meal help, laundry, light cleaning, transfers, and support with daily routines based on a family-built care plan.",
@@ -27,19 +27,19 @@ const schema = [
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.blueriverhomecare.com/",
+        item: `${site.url}/`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.blueriverhomecare.com/services/",
+        item: `${site.url}/services/`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "In-Home Caregiving",
-        item: `https://www.blueriverhomecare.com${canonicalPath}`,
+        item: `${site.url}${canonicalPath}`,
       },
     ],
   },

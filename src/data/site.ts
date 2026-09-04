@@ -1,7 +1,7 @@
 export const site = {
   name: "Blue River Home Care",
   legalName: "Blue River Home Care LLC",
-  url: "https://www.blueriverhomecare.com",
+  url: "https://blueriverhomecare.com",
   description:
     "Local, non-medical home care and companionship for older adults and families across the Kansas City metro, from our office in Belton, Missouri.",
   email: "chris@blueriverhomecare.com",

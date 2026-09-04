@@ -11,18 +11,21 @@ const resources = [
     meta: "Care planning",
     href: "/resources/when-is-it-time-for-home-care/",
     image: careImage,
+    imageAlt: "Caregiver helping an older adult stand safely at home",
   },
   {
     title: "How a care consultation works",
     meta: "What to expect",
     href: "/resources/how-a-care-consultation-works/",
     image: consultationImage,
+    imageAlt: "Caregiver greeting an older adult during a home visit",
   },
   {
     title: "How families pay for home care",
     meta: "Private pay and benefits",
     href: "/resources/how-families-pay-for-home-care/",
     image: familyImage,
+    imageAlt: "Older couple reviewing care paperwork at their kitchen table",
   },
 ];
 ---
@@ -42,7 +45,11 @@ const resources = [
               <span>{resource.meta}</span>
             </div>
             <div class="ref-resource-preview">
-              <Image src={resource.image} alt="" widths={[300, 440]} />
+              <Image
+                src={resource.image}
+                alt={resource.imageAlt}
+                widths={[300, 440]}
+              />
             </div>
             <ArrowRight size={26} aria-hidden="true" />
           </a>

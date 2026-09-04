@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import { render } from "astro:content";
 import Breadcrumbs from "../components/layout/Breadcrumbs.astro";
+import { site } from "../data/site";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
@@ -12,10 +13,7 @@ interface Props {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const canonicalPath = `/resources/${entry.id}/`;
-const articleUrl = new URL(
-  canonicalPath,
-  "https://www.blueriverhomecare.com",
-).toString();
+const articleUrl = new URL(canonicalPath, site.url).toString();
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "long",
   day: "numeric",
@@ -29,19 +27,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://www.blueriverhomecare.com/",
+      item: `${site.url}/`,
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Resources",
-      item: "https://www.blueriverhomecare.com/resources/",
+      item: `${site.url}/resources/`,
     },
     {
       "@type": "ListItem",
       position: 3,
       name: entry.data.title,
-      item: `https://www.blueriverhomecare.com${canonicalPath}`,
+      item: `${site.url}${canonicalPath}`,
     },
   ],
 };
@@ -58,14 +56,11 @@ const articleSchema = {
     "@type": "Person",
     name: entry.data.author,
     jobTitle: "Director of Operations",
-    worksFor: { "@id": "https://www.blueriverhomecare.com/#business" },
+    worksFor: { "@id": `${site.url}/#business` },
   },
-  publisher: { "@id": "https://www.blueriverhomecare.com/#business" },
+  publisher: { "@id": `${site.url}/#business` },
   ...(entry.data.image && {
-    image: new URL(
-      entry.data.image.src,
-      "https://www.blueriverhomecare.com",
-    ).toString(),
+    image: new URL(entry.data.image.src, site.url).toString(),
   }),
   citation: entry.data.sources.map((source) => source.url),
 };
@@ -116,7 +111,7 @@ const faqSchema = entry.data.faqs?.length
           <Image
             class="resource-featured-image"
             src={entry.data.image}
-            alt={entry.data.imageAlt ?? ""}
+            alt={entry.data.imageAlt ?? `${entry.data.title} resource image`}
             width={1200}
             height={630}
             loading="eager"

@@ -10,11 +10,11 @@ import { site } from "../data/site";
 
 const schema = {
   "@type": "Service",
-  "@id": "https://www.blueriverhomecare.com/consultation/#service",
+  "@id": `${site.url}/consultation/#service`,
   name: "Free Care Consultation",
   serviceType: "Home care consultation",
-  url: "https://www.blueriverhomecare.com/consultation/",
-  provider: { "@id": "https://www.blueriverhomecare.com/#business" },
+  url: `${site.url}/consultation/`,
+  provider: { "@id": `${site.url}/#business` },
   description:
     "A free phone or in-person discussion with Chris about companionship, home-care tasks, scheduling, private-pay expectations, and funding questions.",
 };

@@ -11,7 +11,7 @@ updatedAt: 2026-08-28
 sources:
   - title: "Aging in Place: Growing Older at Home"
     publisher: "National Institute on Aging"
-    url: "https://www.nia.nih.gov/health/aging-place-growing-older-home"
+    url: "https://www.nia.nih.gov/health/aging-place/aging-place-growing-older-home"
   - title: "In-Home Services"
     publisher: "Missouri Department of Health and Senior Services"
     url: "https://health.mo.gov/partners-providers/area-agencies-aging/home-services"
