@@ -1,0 +1,16 @@
+{
+  "overflow": false,
+  "heroButtonClear": true,
+  "h1": "In-home senior care in Belton & South Kansas City.",
+  "heroFetchPriority": "high",
+  "fonts": [
+    {
+      "family": "Inter",
+      "status": "loaded"
+    },
+    {
+      "family": "Instrument Sans",
+      "status": "loaded"
+    }
+  ]
+}

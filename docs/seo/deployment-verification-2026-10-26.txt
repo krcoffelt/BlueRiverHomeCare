@@ -1,0 +1,26 @@
+Blue River Home Care publication verification
+Verified October 26, 2026 UTC (publication occurred October 25 at 11:58 PM America/Chicago).
+
+[x] Implementation committed and pushed to main without force:
+c00986c7c6173edeaab9f9462c172b240f75f756
+Exact local HEAD and git ls-remote origin refs/heads/main matched immediately after push.
+[x] GitHub reported zero check-runs; Vercel commit status completed successfully:
+https://vercel.com/hometown-marketing-agency/blue-river-home-care/84FUZLcKXb1Zo3UHWwBCvwUmar8z
+[x] Netlify still showed previous commit 2c40e82 after push; published the checked checkout via connected Netlify upload/build tool to the existing project. No new site, billing, tracking plan or identity changes.
+[x] Netlify production deploy 6adedde7452a9b8a0d9c7115 is ready, plugin_state success, error_message null; published_at 2026-10-26T04:58:47.351Z.
+https://app.netlify.com/projects/spectacular-brigadeiros-d3e152/deploys/6adedde7452a9b8a0d9c7115
+Project ID: 77f494e4-51c8-4148-a110-1390aa19a8e2
+Production: https://blueriverhomecare.com/
+Deploy permalink: https://6adedde7452a9b8a0d9c7115--spectacular-brigadeiros-d3e152.netlify.app/
+[x] Netlify secret scan: 121 files scanned, zero reported matches.
+
+Provenance limitation and independent content verification
+The upload-based Netlify deploy leaves commit_ref null. Do not claim the API attests an exact Git SHA. The uploaded checkout's runtime source was committed as c00986c7c6173edeaab9f9462c172b240f75f756, and the final documentation/ignore follow-up does not change runtime source.
+[x] All 30 live sitemap URLs returned 200 with self-canonical URLs and no noindex.
+[x] All 30 live HTML pages match the checked local build after narrowly normalizing Netlify Forms start-tag processing and the appended Netlify public HUD script. Raw HTML hashes differ because Netlify performs those transformations; both raw hashes and normalized comparison results are recorded in live-http-qa-2026-10-26.json.
+[x] Served CSS and both WOFF2 fonts match local build bytes and SHA-256 hashes exactly. The matched CSS includes the final responsive hero-height fix.
+[x] Live browser checked homepage at desktop and 390px: revised H1, hero fetchpriority high, local fonts loaded, CTA clears service strip, no horizontal overflow at mobile. Screenshot evidence in output/playwright/live-mobile-hero.png; machine evidence in live-browser-qa-2026-10-26.json.
+[x] Added .netlify/ to .gitignore because the connected deployment tool creates local .netlify/state.json; state file is excluded from Git.
+[x] Checklist and verification evidence copied into docs/seo in the original project and implementation checkout.
+
+No real care inquiry, external outreach, GBP/NPPES/citation update, credential/service expansion, or Cursor sign-in was performed. Owner questions remain explicitly deferred in implementation-checklist-2026-10-26.txt. No Lighthouse score, indexing improvement or ranking improvement is claimed.

@@ -30,8 +30,8 @@ Verification
 [x] Both self-hosted fonts loaded from matching preload/CSS asset URLs. Browser emitted preload timing warnings during navigation; no missing font resources. No new Lighthouse/Core Web Vitals improvement claim is made.
 
 Publication
-- Commit only explicit task paths; push main without force; compare exact local/remote SHA.
-- Verify Netlify production commit_ref, ready/published state and live HTML/assets after push. Final immutable commit/deploy identifiers and live verification belong in deployment-verification-2026-10-26.txt, produced after publication and copied to both checkouts.
+[x] Committed explicit task paths and pushed main without force; exact local/remote SHA matched.
+[x] Verified Netlify ready/published state, live HTML/assets and GitHub/Vercel outcome. Netlify upload API leaves commit_ref null; independent content comparison and the precise limitation are recorded in deployment-verification-2026-10-26.txt. Runtime source commit and deploy ID are preserved there.
 
 Owner-dependent actions and questions (deferred, not failures of repository QA)
 [ ] Confirm authoritative legal identity, public address and phone: website Belton 8420 Clint Drive Ste D / 816-641-2881 vs reported NPI 1326975137 Raymore 404 Woodview Dr / 816-291-3734. Site already also stores the latter as a direct number; clarify main/direct phone strategy. Do not overwrite NPPES or public NAP from the audit alone.

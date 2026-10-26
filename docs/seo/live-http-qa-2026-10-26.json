@@ -1,0 +1,325 @@
+{
+  "domain": "https://blueriverhomecare.com",
+  "sourceCommit": "c00986c7c6173edeaab9f9462c172b240f75f756",
+  "sitemapUrls": 30,
+  "results": [
+    {
+      "url": "https://blueriverhomecare.com/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "f3e46fa6e9d8b6b008ada9b8c17dafbb90bb6d2cfad7d7ccb8ddf1468fa1b867",
+      "h1": ["In-home senior care in Belton &amp; South Kansas City."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/about/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "379ac40368105d5b6eda744f054d86d89620367306c0b5cca95cd5bacb4384cb",
+      "h1": ["Your Belton home care team."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/consultation/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "e0bbc080702325a2bda205aa935fd3cf080e3237119a1bf485fbedd514e6d8d9",
+      "h1": ["Talk through what has changed at home."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/contact/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "9e90cbef766ed186d9adbd37e5a9708b9172809ddbe254a78e8dbeb2488ecb09",
+      "h1": ["Tell Chris what has changed at home."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/faq/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "43ad5a15bb35a40b5fa68994f3f8a3d7174881a2ed3dc3133d467b8b854b85ff",
+      "h1": ["Home care questions, answered."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/privacy/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "2e0ec703b4e0c249fa120ade73ba68fe2f51cfa31b8382eac77361deb8462db5",
+      "h1": ["Website privacy and contact consent."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "879fe7953f00fe67bdac9e97779a56330136bd6155daac0d8671e556939543e3",
+      "h1": ["Practical home care guides."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/choose-home-care-agency-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "75d5fc7442974b04a281eee0740ea3484079d8d072ef3e5599b53d25442fbbae",
+      "h1": ["How to Choose a Home Care Agency in Kansas City"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/fall-prevention-seniors-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "4848ed92fb659059261826eb57133cd48dcf8f5b5d6f774c2947bfc6d69c2c23",
+      "h1": ["Fall Prevention for Kansas City Seniors"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/family-caregiver-relief-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "ab38edcf176900b7319782f60c075e0adb5a906f66deeff1c64a9c974bffa673",
+      "h1": ["Companion Care for Kansas City Families"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/holiday-visits-aging-parents-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "72ebc0f9cc824fb284ab829da6c55ce64a18618740b6aa574c466e1449571d83",
+      "h1": ["Help for Aging Parents in Kansas City: A Holiday Visit Guide"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/home-care-cost-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "f1a87d798637958a1d3f65e5b9d0d7a6cad79b15adf16cc6c01fd3131ebcb718",
+      "h1": ["How Much Does Home Care Cost in Kansas City in 2026?"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/home-care-vs-assisted-living-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "139e569b88873da43520d28591b4afe2b544e676c66a8ba0db1b9b738d2ff675",
+      "h1": ["Home Care vs. Assisted Living in Kansas City"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/home-care-vs-home-health-kansas-city/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "106a320be31ad56153e491d335839d432dd19cd819aa3982de3d92a1a16d2f12",
+      "h1": ["Home Care vs. Home Health Care in Kansas City"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/how-a-care-consultation-works/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "403cb509d8544c2bb31ab6e384d087c8e7bf4e5603453211b53ff018e3ad4c7d",
+      "h1": ["How a Home Care Consultation Works"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/how-families-pay-for-home-care/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "47ed9814aa6360d6d5440a2579ee7534fe3beae6b5d138232e3d5d7292bd0e66",
+      "h1": ["How Families Can Pay for Home Care"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/private-pay-home-care/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "26b08e365d1f2843d2aaee5dc03ead46e9ea75e827a15fd4ea941f4a60cc23fb",
+      "h1": ["What Private-Pay Home Care Means"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/resources/when-is-it-time-for-home-care/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "073356a260be9d51b2a3b9cca4d4fe18a6164fdfc042bb0876e2e30d5d88efd8",
+      "h1": ["When Is It Time for Home Care?"],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "35a8caccab3916ec6e15414af1548900bb4d75ceceedeab4d70e14f5e6b8427e",
+      "h1": ["Home care across the Kansas City metro."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/belton-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "c36ca965213a291ff3b703837b0e1f8288263508d39ce184f841c4a891c32987",
+      "h1": ["In-home caregiving in Belton, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/grandview-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "b50b0b133aaa336481852b55b3924aef8486ace488a282e4586ae904e262b7b3",
+      "h1": ["In-home caregiving in Grandview, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/greenwood-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "706ed5071e0e164fc64e3decce46f50e46e8d5c4da72fe6306ab51786fcd86ba",
+      "h1": ["In-home caregiving in Greenwood, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/independence-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "37c6723a6ed1fffd2e03e3a880525c209ce39421fd1b493f66a86a49c0ea675e",
+      "h1": ["In-home caregiving in Independence, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/kansas-city-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "09340204c0b3e41047adf3f3b451f095e29abbf7ff03c9883c8cf27de0a4b769",
+      "h1": ["In-home caregiving in Kansas City, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/lees-summit-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "fdc6c915fdb172e0f6495377ffd4f8076325e37b63056062f9a8cce1d88b0be2",
+      "h1": ["In-home caregiving in Lee&#39;s Summit, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/raymore-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "c491775d0e0f9ee3e627c4635ab063236d150a8c1b7163cc1d7cf75c6cd95545",
+      "h1": ["In-home caregiving in Raymore, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/service-areas/raytown-mo/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "e5f1e1807bb08732386043d4925404d3a2b0208e84c53d682dd2985c7659e5a3",
+      "h1": ["In-home caregiving in Raytown, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/services/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "6b5a125e609478514ab328ae5ce19bc9cf146604a60d8a9f323d1168c5515a73",
+      "h1": ["Non-medical home care services in Belton, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/services/companion-care/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "1e834535b096dfb9cd509d07ecad2d5d65a7d8638c939b793741969f393646a2",
+      "h1": ["Companion care for seniors in Belton, MO."],
+      "matchesAfterNetlifyTransforms": true
+    },
+    {
+      "url": "https://blueriverhomecare.com/services/in-home-caregiving/",
+      "status": 200,
+      "selfCanonical": true,
+      "noindex": false,
+      "matchesLocalBuild": false,
+      "sha256": "6c40c69d98ddc7d18af87ed2f78f768cb1b19836a19a940b9e8b772ac4777778",
+      "h1": ["In-home caregiving in Belton, MO."],
+      "matchesAfterNetlifyTransforms": true
+    }
+  ],
+  "assets": [
+    {
+      "asset": "/_astro/instrument-sans-latin.CclBWeUS.woff2",
+      "matchesLocalBuild": true,
+      "sha256": "6219bc4bfdfc5d9b2201dcdf046218b122a758f932e25ed5f168f929b7ca2311"
+    },
+    {
+      "asset": "/_astro/inter-latin.8kRkwJBP.woff2",
+      "matchesLocalBuild": true,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "asset": "/_astro/BaseLayout.H6hcKWA1.css",
+      "matchesLocalBuild": true,
+      "sha256": "2480914c5881bcb0e77a93445e4271155773415b729c06a82801f764d30d717d"
+    }
+  ],
+  "normalization": "Ignore only Netlify-injected public HUD script and known Netlify Forms processing (remove data-netlify/netlify-honeypot, normalize form attribute order/quotes); all other HTML compared unchanged."
+}
