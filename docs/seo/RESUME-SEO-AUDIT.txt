@@ -1,0 +1,9 @@
+Resume only Blue River Home Care's SEO audit in this existing Codex project. Read docs/seo/blueriverhomecare-audit-email-2026-10-24.txt and docs/seo/blueriverhomecare-implementation-handoff-2026-10-26.txt completely, including the SE Ranking baseline and limitations. Inspect applicable AGENTS.md and skills.
+
+Continue preserved uncommitted work in /tmp/blueriver-seo-20261026, which exists as of this handoff. Prior handoff reports check/build/crawl passed, with visual browser QA and checklist pending. Inspect actual Git state and diff before proceeding and preserve all unrelated work.
+
+The original email is saved exactly. The linked Cursor interactive canvas reached sign-in in the Air's browser; it has not been read. Do not claim the full interactive report was retrieved. Validate and implement only email-supported findings against current code/site, finish desktop/mobile QA, and save a checklist, verification evidence and deferred issues in docs/seo in this original project and implementation checkout. Preserve existing Belton relevance and analytics/consent behavior; confirm actual routes before changing Raymore targeting.
+
+This is healthcare marketing: never invent care services, medical claims, credentials, caregiver screening/insurance promises, testimonials or coordinates. Confirm offerings before new service pages. Defer address/NPI mismatches and external GBP/NPPES/citation/review work to Kyle; do not change those systems or send outreach.
+
+After required checks pass, review/stage only task-owned explicit paths, commit and push main once where possible without force push, and verify exact remote SHA and Netlify/CI outcome. No billing or tracking-plan changes. ACS Painting remains excluded.

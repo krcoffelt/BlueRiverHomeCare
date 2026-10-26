@@ -1,3 +1,20 @@
+/* Latin subsets of the existing SIL Open Font License typefaces. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/instrument-sans-latin.woff2") format("woff2");
+}
+
 :root {
   --color-ink: #17252b;
   --color-muted: #52636a;
@@ -1834,8 +1851,8 @@ h3 {
 /* Nursing Care reference system, adapted to the Blue River brand. */
 :root {
   --ref-primary: #0d5f75;
-  --ref-primary-bright: #1687a6;
-  --ref-green: #71a942;
+  --ref-primary-bright: #0e718b;
+  --ref-green: #467329;
   --ref-ink: #0a4b5e;
   --ref-white: #fafcfd;
   --ref-soft-blue: #e8f1f4;
@@ -2032,8 +2049,8 @@ h3 {
 
 .ref-hero-media {
   position: relative;
-  height: 770px;
-  padding: 90px;
+  min-height: 770px;
+  padding: 90px 90px 140px;
   border-radius: var(--ref-radius);
   isolation: isolate;
 }
@@ -3618,8 +3635,9 @@ h3 {
   }
 
   .ref-hero-media {
-    height: 600px;
-    padding: 40px;
+    height: auto;
+    min-height: 600px;
+    padding: 40px 40px 100px;
   }
 
   .ref-hero-copy {
@@ -3741,8 +3759,8 @@ h3 {
   }
 
   .ref-hero-media {
-    height: 450px;
-    padding: 20px;
+    min-height: 450px;
+    padding: 20px 20px 90px;
   }
 
   .ref-hero-media > picture img,

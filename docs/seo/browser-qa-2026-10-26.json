@@ -1,0 +1,732 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "route": "/about/",
+      "status": 200,
+      "h1": "Your Belton home care team.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/services/",
+      "status": 200,
+      "h1": "Non-medical home care services in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/services/companion-care/",
+      "status": 200,
+      "h1": "Companion care for seniors in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/services/in-home-caregiving/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/service-areas/belton-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/service-areas/raymore-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raymore, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/service-areas/raytown-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raytown, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 1440,
+      "route": "/consultation/",
+      "status": 200,
+      "h1": "Talk through what has changed at home.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/about/",
+      "status": 200,
+      "h1": "Your Belton home care team.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/services/",
+      "status": 200,
+      "h1": "Non-medical home care services in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/services/companion-care/",
+      "status": 200,
+      "h1": "Companion care for seniors in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/services/in-home-caregiving/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/service-areas/belton-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/service-areas/raymore-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raymore, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/service-areas/raytown-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raytown, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 768,
+      "route": "/consultation/",
+      "status": 200,
+      "h1": "Talk through what has changed at home.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/about/",
+      "status": 200,
+      "h1": "Your Belton home care team.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/services/",
+      "status": 200,
+      "h1": "Non-medical home care services in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/services/companion-care/",
+      "status": 200,
+      "h1": "Companion care for seniors in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/services/in-home-caregiving/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/service-areas/belton-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/service-areas/raymore-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raymore, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/service-areas/raytown-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raytown, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 390,
+      "route": "/consultation/",
+      "status": 200,
+      "h1": "Talk through what has changed at home.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/about/",
+      "status": 200,
+      "h1": "Your Belton home care team.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/services/",
+      "status": 200,
+      "h1": "Non-medical home care services in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/services/companion-care/",
+      "status": 200,
+      "h1": "Companion care for seniors in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/services/in-home-caregiving/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/service-areas/belton-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Belton, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/service-areas/raymore-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raymore, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/service-areas/raytown-mo/",
+      "status": 200,
+      "h1": "In-home caregiving in Raytown, MO.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/consultation/",
+      "status": 200,
+      "h1": "Talk through what has changed at home.",
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "brokenImages": [],
+      "heroButtonClear": null
+    },
+    {
+      "width": 320,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "heroButtonClear": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Sans",
+          "status": "loaded"
+        }
+      ],
+      "h1": "In-home senior care in Belton & South Kansas City.",
+      "brokenImages": []
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "Final hero rechecked at 320, 360, 390, 768, 1024 and 1440 after adaptive height fix; other route layouts unchanged by hero-only CSS fix.",
+    "Mobile menu opened and Free Consultation link navigated successfully. Empty form invalid; consent required; POST /thank-you/ and honeypot preserved. No lead sent.",
+    "Fonts loaded; browser preload timing warnings observed during rapid navigation."
+  ]
+}

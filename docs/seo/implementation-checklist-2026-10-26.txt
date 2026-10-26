@@ -1,0 +1,46 @@
+Blue River Home Care SEO implementation checklist
+Work session: October 25, 2026 (America/Chicago); evidence filenames use October 26 UTC.
+
+Evidence and scope
+[x] Read RESUME-SEO-AUDIT.txt, the preserved audit email, and implementation/ranking handoff completely.
+[x] Inspected actual main checkout, fetched origin, reviewed every preserved source diff, and preserved unrelated work. No applicable AGENTS.md found in ancestors or implementation tree.
+[x] The Cursor interactive report remains behind sign-in and was NOT retrieved. Email findings are leads to validate, not independently verified business facts.
+[x] Preserved the SE Ranking October 25 snapshot and its limitations in the original handoff: Belton home care #8 desktop/mobile; historical landing URLs are observations, not configured targets or proof of cannibalization. No new ranking or traffic claim.
+
+Completed repository changes
+[x] Descriptive homepage, About, Services and Companion H1s; preserved Belton relevance and added South Kansas City to homepage title/H1.
+[x] Self-hosted existing Inter and Instrument Sans Latin fonts, font-display:swap, matching font preloads, and bundled OFL licenses. Google Fonts stylesheet/preconnect removed.
+[x] High fetch priority on eager responsive homepage hero; explicit lazy loading on selected offscreen images.
+[x] Darker teal/green text and button tokens; replaced homepage generic Learn more with Meet the Blue River team. Existing service-card Read more belongs to whole-card links whose accessible name includes the service heading.
+[x] Expanded About and service overview using existing src/data/services.ts offerings. Added service links to city pages. No new service routes, specialty offerings, credentials, testimonials, coordinates or review/profile schema.
+[x] Raymore and Raytown have separate existing slugs, headings, canonical URLs and navigation links. No redirect or reassignment based on historical SE Ranking observations.
+[x] Kept existing city-specific data; substantive local expansions await verified owner facts. No invented hospitals, partnerships or client stories.
+[x] Analytics already loads gtag asynchronously; SiteAnalytics, form consent, privacy copy, recipient workflow and tracking configuration were not changed.
+[x] Browser QA found and fixed the longer homepage H1 covering its CTA at mobile and intermediate desktop widths: content-driven hero height with reserved space above the service strip.
+
+Verification
+[x] npm run check: 47 Astro files, zero errors/warnings/hints.
+[x] npm run build: success, static output and sitemap generated.
+[x] Existing SEO crawl: 33 HTML files, 30 indexable pages, zero missing/duplicate titles, missing descriptions/canonicals, invalid H1 counts, broken internal links or pages without structured data. See post-implementation-crawl-2026-10-26.json.
+[x] Local HTTP crawl: all 30 sitemap URLs return 200, self-canonical, no noindex. See local-http-qa-2026-10-26.json.
+[x] HTTP apex and HTTPS www both return 301 to HTTPS apex; live HTTPS response supplies HSTS.
+[x] Changed source formatting and git diff --check pass. Whole-repo format check also reports existing drift in output/seo, scripts/seo-audit.mjs, Footer.astro and contact.astro; those unrelated files were left untouched. Task JSON evidence is formatted separately.
+[x] Desktop/mobile browser screenshots reviewed (38 route/viewport cases; homepage at 320/360/390/768/1024/1440); navigation opens and links to consultation. Empty inquiry form is invalid, explicit consent remains required, POST action /thank-you/ and honeypot preserved. No real lead was submitted and delivery/notification is not claimed tested.
+[x] Browser dimensions and machine results are in browser-qa-2026-10-26.json; local screenshots are under output/playwright (ignored artifacts).
+[x] Both self-hosted fonts loaded from matching preload/CSS asset URLs. Browser emitted preload timing warnings during navigation; no missing font resources. No new Lighthouse/Core Web Vitals improvement claim is made.
+
+Publication
+- Commit only explicit task paths; push main without force; compare exact local/remote SHA.
+- Verify Netlify production commit_ref, ready/published state and live HTML/assets after push. Final immutable commit/deploy identifiers and live verification belong in deployment-verification-2026-10-26.txt, produced after publication and copied to both checkouts.
+
+Owner-dependent actions and questions (deferred, not failures of repository QA)
+[ ] Confirm authoritative legal identity, public address and phone: website Belton 8420 Clint Drive Ste D / 816-641-2881 vs reported NPI 1326975137 Raymore 404 Woodview Dr / 816-291-3734. Site already also stores the latter as a direct number; clarify main/direct phone strategy. Do not overwrite NPPES or public NAP from the audit alone.
+[ ] Verify Missouri SOS identity and any applicable regulatory facts with authoritative records. No licensing/legal claim added.
+[ ] Confirm personal care tasks (bathing/dressing/toileting), respite, dementia/Alzheimer specialty, overnight/24-hour/live-in and hospital-to-home offerings before adding pages or promises. Indeed wording alone is insufficient.
+[ ] Approve evidence for screening, training, insurance, bonding and credentials before publication. Supply authentic consented testimonials and eligible review/profile URLs before review/sameAs schema.
+[ ] Confirm geographic coverage, staffing and care schedules separately from office hours; confirm Clay/Platte and proposed additional cities before expansion/removal.
+[ ] Confirm existing Chris headshot permission and image rights: older launch checklist says the photo is unpublished, but current baseline already publishes it. No new image permission was inferred.
+[ ] Owner to verify GBP existence/access/category/service-area/address eligibility, NPPES correction, citations/chamber listings, reviews and external links. Audit absence claims remain limited by incomplete Maps/Yelp checks. No outreach, account creation or external identity edits performed.
+[ ] Owner to provide Search Console/Bing access or tokens, submit sitemap, and verify indexing and real-user performance. No indexing or ranking gains inferred from a successful crawl.
+[ ] Confirm production inquiry recipient/notification, consent/retention and analytics approvals; real submission delivery and comprehensive assistive-technology/Lighthouse auditing remain separate launch work. Existing docs/launch-checklist.md is historical and does not certify these approvals.
+[ ] Supply access/export for interactive Cursor report if its additional findings are to be assessed.

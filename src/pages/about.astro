@@ -49,7 +49,7 @@ const facts = [
           items={[{ label: "Home", href: "/" }, { label: "About" }]}
         />
         <p class="eyebrow">About Blue River</p>
-        <h1>Home care planned around your family.</h1>
+        <h1>Your Belton home care team.</h1>
         <p class="lead">
           Blue River Home Care is based in Belton and helps clients and families
           plan practical support around life at home.
@@ -94,6 +94,7 @@ const facts = [
     <div class="container split inner-feature-split">
       <div class="media-frame inner-notched-media">
         <Image
+          loading="lazy"
           src={caregiverImage}
           alt="Caregiver and older adult talking together at home"
           widths={[700, 1000, 1500]}
@@ -113,6 +114,7 @@ const facts = [
 
   <section class="inner-image-cta" aria-labelledby="about-cta-title">
     <Image
+      loading="lazy"
       src={consultationImage}
       alt="Older adult and family member sharing a quiet conversation"
       widths={[900, 1400, 2000]}
@@ -130,12 +132,14 @@ const facts = [
     <div class="container values-layout">
       <div class="values-media">
         <Image
+          loading="lazy"
           src={aboutImage}
           alt="Family spending time together at home"
           widths={[600, 900, 1200]}
           sizes="(max-width: 940px) 100vw, 34vw"
         />
         <Image
+          loading="lazy"
           src={caregiverImage}
           alt="Caregiver providing companionship to an older adult"
           widths={[500, 700, 900]}
@@ -184,6 +188,7 @@ const facts = [
       <div class="leadership-feature">
         <article class="leadership-person">
           <Image
+            loading="lazy"
             src={chrisImage}
             alt="Chris Jennen, Director of Operations at Blue River Home Care"
             widths={[500, 800, 1100]}
@@ -213,6 +218,29 @@ const facts = [
           </article>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="about-planning-title">
+    <div class="article-container copy-stack">
+      <h2 id="about-planning-title">
+        A local starting point for care decisions.
+      </h2>
+      <p>
+        From the Belton office, Chris helps families discuss care needs,
+        scheduling, and payment questions. You can begin with a specific
+        concern, such as meals becoming harder or a parent spending more time
+        alone. You do not need a completed care plan before asking for a
+        consultation.
+      </p>
+      <p>
+        Explore <a href="/services/companion-care/">companionship</a> and
+        <a href="/services/in-home-caregiving/">practical in-home caregiving</a>
+        before the conversation, then identify what your loved one wants help with
+        and which routines should stay familiar. Confirm availability for the care
+        address and discuss tasks, timing, and private-pay expectations with Chris.
+        Our <a href="/service-areas/">service-area pages</a> explain where families
+        can start that discussion.
+      </p>
     </div>
   </section>
 </BaseLayout>

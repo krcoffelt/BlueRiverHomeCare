@@ -25,6 +25,7 @@ import consultationImage from "../../assets/scraped/consultation-support.jpg";
     <div class="ref-about-images" data-reveal>
       <div class="ref-about-image ref-about-image-low">
         <Image
+          loading="lazy"
           src={consultationImage}
           alt="A family member planning care at home"
           widths={[420, 700, 900]}
@@ -33,6 +34,7 @@ import consultationImage from "../../assets/scraped/consultation-support.jpg";
       </div>
       <div class="ref-about-image ref-about-image-tall">
         <Image
+          loading="lazy"
           src={familyImage}
           alt="Family spending time together at home"
           widths={[480, 760, 960]}
@@ -48,7 +50,9 @@ import consultationImage from "../../assets/scraped/consultation-support.jpg";
         Blue River helps families plan non-medical home care and companionship
         around the client’s routines, preferences, and home.
       </p>
-      <Button href="/about/" variant="secondary">Learn more</Button>
+      <Button href="/about/" variant="secondary"
+        >Meet the Blue River team</Button
+      >
     </div>
   </div>
 </section>

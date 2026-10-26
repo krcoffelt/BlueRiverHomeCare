@@ -1,0 +1,43 @@
+Blue River Home Care audit implementation handoff
+Prepared 2026-10-26 UTC.
+
+Sources
+Email: https://mail.google.com/mail/u/?authuser=kyle%40hometownkc.agency#all/1a176602f6f748fc
+Sent 2026-10-26 04:02:57 UTC, self-addressed Hometown. No attachment exists. The original 5,959-byte plain-text email body is preserved separately without alteration.
+Full interactive report link: https://cursor.com/canvas/store-15893f24-176f-4da9-ae3d-934dc63943e3/4ed722f2-6af4-4389-8586-4e6067a75f55
+Cloud web retrieval failed; ordinary HTTP redirects to Cursor authentication and returned a 403 challenge. Do not label the email-body copy as a retrieved full interactive canvas. The user's existing authenticated local browser may be able to read it. No CAPTCHA or login was attempted.
+Repository: https://github.com/krcoffelt/BlueRiverHomeCare ; default branch main, push permission verified read-only.
+
+Supported repository work to validate
+- Preserve homepage's existing Belton relevance, already ranking #8 for home care Belton MO.
+- Assess homepage hero fetchpriority/high loading, responsive sizing and font self-hosting/preload. Preserve analytics/consent semantics when optimizing gtag.
+- Improve contrast and generic Learn more links.
+- Replace vague slogan-only H1s with descriptive service/locality headings where accurate: homepage in-home senior care in Belton/South Kansas City; services non-medical home care services; companion page companion care.
+- Expand thin existing service/About content and differentiate existing city pages with verified local facts. No invented project stories, testimonials, care credentials or insurance/screening statements.
+- Verify actual indexability, sitemap, canonicals and redirect behavior against current code; audit reports 30 sitemap URLs and no broken internal links but live state may differ.
+- Consider missing service pages only after actual offerings are established. Report infers personal care from Indeed job wording; that alone should not authorize claiming dementia specialization, live-in, 24-hour, respite, hospital-to-home or medical services.
+- sameAs only for verified actual profiles; never add aggregateRating without authentic eligible review evidence or fabricated coordinates.
+- Review Raymore targeting: SE Ranking observed Raymore queries on /service-areas/raytown-mo/ in historical landing records. Inspect actual routes/internal links/copy before diagnosing cannibalization or redirecting.
+
+Requires owner facts / external permission
+- Audit claims website Belton address 8420 Clint Drive, Ste D, phone8166412881 conflicts with NPI1326975137 Raymore address/phone8162913734. Do not overwrite either identity solely from report; confirm authoritative business information.
+- Report's no-GBP/no-reviews/no-citations/no-backlinks conclusions are limited by report itself saying Google Maps/Yelp not fully checked. Absence is not independently established.
+- GBP creation/verification, NPPES changes, review requests, directory outreach/accounts and Search Console/Bing verification requiring new access are not repository changes and remain deferred.
+- Do not copy legal/regulatory claim about Missouri licensing without current official verification and owner context. No such legal verification performed here.
+
+SE Ranking baseline
+Project12868160; Google USA desktop engine369592 (catalog200), Google Mobile USA engine369595 (catalog1540); Kansas City, Missouri, United States; English; map merging off.
+Snapshot2026-10-25;50 unique tracked keywords across both engines. Nine found in top100 per engine, one in top10 per engine.
+Desktop/mobile:
+home care Belton MO (16888831):8/8
+senior home care Belton MO (16888834):32/31
+home care Independence MO (16888840):33/34
+in home care Lee's Summit MO (16888819):48/53
+home care Lee's Summit MO (16888816):50/51
+in home care Raymore MO (16888828):55/56
+home care Raymore MO (16888822):60/67
+senior home care Lee's Summit MO (16888813):67/67
+senior home care Raymore MO (16888825):70/72
+41 other terms not found within100 each device; this is not proof of no traffic or deindexing.
+All configured target links are null. Landing URLs are observed/historical, not assigned targets; preserve their dates.
+Provider keyword volumes present in raw JSON are not independently verified local demand; zero volume is not proof nobody searches.

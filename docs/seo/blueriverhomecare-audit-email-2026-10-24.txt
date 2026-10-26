@@ -1,0 +1,66 @@
+SEO Audit + Ranking Plan: Blue River Home Care (blueriverhomecare.com)
+Refreshed Oct 24, 2026
+
+Full interactive report: https://cursor.com/canvas/store-15893f24-176f-4da9-ae3d-934dc63943e3/4ed722f2-6af4-4389-8586-4e6067a75f55
+
+BOTTOM LINE
+The website itself is solid: a clean Astro build, 30 indexable pages, good schema and 11 long local guides. What's holding it back is everything off the site. There's no Google Business Profile, no reviews and no directory listings. The public NPI record, plus 4+ sites copying it, shows a different address and phone. There are no backlinks. Top priority: create and verify the Google Business Profile and make the name, address and phone identical everywhere, starting with the NPI record.
+
+SCORES (1-10)
+- Technical 8: All 30 sitemap URLs return 200, with self-canonicals, no noindex and schema on every page. Home page mobile LCP is 3.0-4.8s because of render-blocking CSS and Google Fonts.
+- On-page 6: Titles and descriptions are well sized and localized. Key pages have slogan H1s, there are only 2 service pages, and the 8 city pages share one template.
+- Content 7: The 11 guides run about 1,800-2,100 words with sources. Service and About pages are thin (190-300 words), and there are no testimonials or screening/insurance trust copy.
+- Local 2: No GBP found and 0 reviews. Not listed on BBB, A Place for Mom, Care.com or Caring.com. NPI and the sites copying it show a Raymore address and a different phone.
+- Authority 1: The domain was registered 2025-09-17 and no referring sites were found. The brand name collides with a UK "Blue River Home Care" and KC's "Blue River Care Center."
+
+BUSINESS IDENTITY
+- Website: 8420 Clint Drive, Ste D, Belton, MO 64012 | (816) 641-2881 | chris@blueriverhomecare.com | M-F 9-5
+- NPI 1326975137 (In Home Supportive Care, active): 404 Woodview Dr, Raymore, MO 64083 | 816-291-3734. This is a mismatch, and opennpi.com, npiscope.com, npiguide.com and medicalfacilities.org all copy it.
+- Missouri doesn't license private-pay non-medical home care, so no state listing is expected.
+- Missouri SOS filing is not verified (the search is a form). Confirm it at bsd.sos.mo.gov.
+
+TECHNICAL
+- robots.txt allows everything and declares sitemap-index.xml (30 URLs).
+- 0 broken internal links. www redirects to the apex domain (301), and HSTS is on.
+- http-to-https is unverified because port 80 is blocked from my computer.
+- Schema includes LocalBusiness, Service, BreadcrumbList, Article and FAQPage. Missing: sameAs, geo, aggregateRating.
+- Google's PageSpeed API was quota-blocked, so I used Lighthouse instead. Its scores varied between runs: the home page scored 76-93 on mobile performance, and the city and service pages scored 94-96.
+- Speed fixes: add fetchpriority="high" to the home hero image, self-host or preload fonts, defer gtag, lazy-load offscreen images, and fix color contrast and the "Learn more" link text.
+- Inner-page indexing is unverified. Set up Google Search Console.
+
+ON-PAGE
+- H1s with no city or keyword: home "Home care that feels right at home." (and similar on About, Services and Companion). City page H1s are good.
+- Only 2 service pages exist (companion care and in-home caregiving). There are none for personal care, respite, dementia, overnight/24-hour or hospital-to-home care. The Indeed job post lists bathing, dressing and toileting, so personal care is offered.
+- The 8 city pages run 434-469 words with identical structure and no local detail.
+- CTAs are strong and alt text is complete. Testimonials and a caregiver screening/insurance statement are missing.
+
+COMPETITORS
+- Senior Services Options (Belton): Caring.com 4.5 (10 reviews), 7 reviews on A Place for Mom, Belton Chamber member, dementia/respite/24-7 care, bonded and insured.
+- Senior Helpers KC South: 1,390-word Belton page, dementia programs, Raymore page.
+- Visiting Angels of KC (Lee's Summit): Belton and Raymore pages, 10 specialty services.
+- ComForCare Lee's Summit: Belton page with FAQ, dementia, 24-hr and respite care.
+- Simply Home Companion & Personal Care: 1,455-word Raymore page, licensed/bonded/insured copy.
+(Competitor Google review counts are not verified.)
+
+PLAN
+This week:
+1. Create and verify the Google Business Profile (category "Home help service", not "Home health care service") with the Belton name, address and phone.
+2. Update NPPES (NPI 1326975137) to the Belton address and phone.
+3. Ask 5-10 client families for Google reviews once the profile is live.
+4. Verify Google Search Console and Bing Webmaster Tools, and submit sitemap-index.xml.
+5. Make the quick speed fixes above.
+
+30 days:
+- New service pages (only for services offered): "Personal Care Services in Belton, MO" | "Respite Care for Family Caregivers in Belton & South KC" | "Dementia & Alzheimer's Home Care in Belton, MO" | "Overnight & 24-Hour Home Care in South Kansas City" | "Hospital-to-Home Care in Belton & Raymore"
+- Keyword H1s: Home "In-Home Senior Care in Belton & South Kansas City"; Services "Non-Medical Home Care Services in Belton, MO"; Companion "Companion Care for Seniors in Belton, MO"
+- Citations: Caring.com (its Belton page lists 0 agencies, so it's an easy win), A Place for Mom, Care.com, AgingCare, SeniorAdvisor, Yelp, BBB, Bing Places, Apple Business Connect, Belton and Raymore chambers, Missouri Alliance for Care at Home.
+- "Our Caregivers" trust page and testimonials, plus sameAs in the schema.
+
+90 days:
+- Rewrite the city pages with real local detail. Add Peculiar, Harrisonville, Pleasant Hill, Loch Lloyd and South KC. Drop Clay/Platte unless they're truly served.
+- Local links: chambers, hospital discharge planners (Belton Regional, Research Medical Center), senior centers, churches and sponsorships.
+- Weekly GBP posts and photos, 20+ Google reviews, and a monthly guide.
+
+NOT CHECKED: Yelp (403), Google Maps listings, keyword search volumes and real-user speed data.
+
+Working files: /workspace/seo-audits/blueriverhomecare.com/
