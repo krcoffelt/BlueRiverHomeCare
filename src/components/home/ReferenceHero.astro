@@ -42,13 +42,22 @@ const marqueeItems = [
         <Button href="/consultation/">Schedule a Free Consultation</Button>
       </div>
       <div class="ref-hero-notch" aria-hidden="true"></div>
-      <div class="ref-marquee" aria-label="Blue River home care support">
+      <div
+        class="ref-marquee"
+        role="group"
+        aria-label="Blue River home care support"
+      >
         <div class="ref-marquee-track">
           {
-            [...marqueeItems, ...marqueeItems].map((item) => {
+            [...marqueeItems, ...marqueeItems].map((item, index) => {
               const Icon = item.icon;
               return (
-                <div class="ref-marquee-item">
+                <div
+                  class="ref-marquee-item"
+                  aria-hidden={
+                    index >= marqueeItems.length ? "true" : undefined
+                  }
+                >
                   <span class="ref-marquee-icon">
                     <Icon size={24} />
                   </span>

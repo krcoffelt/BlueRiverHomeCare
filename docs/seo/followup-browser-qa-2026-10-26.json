@@ -1,0 +1,115 @@
+{
+  "keyboard": {
+    "skipFocused": true,
+    "skipDestination": true,
+    "mobileMenuOpen": true,
+    "firstMenuLink": "Services",
+    "menuDestination": "/services/",
+    "desktopMenuOpen": true,
+    "firstDesktopLink": "Service Areas"
+  },
+  "responsiveHeader": [
+    {
+      "width": 320,
+      "overflow": false,
+      "logoWidth": 205,
+      "logoHeight": 47.1796875,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    },
+    {
+      "width": 360,
+      "overflow": false,
+      "logoWidth": 205,
+      "logoHeight": 47.1796875,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "logoWidth": 205,
+      "logoHeight": 47.1796875,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "logoWidth": 205,
+      "logoHeight": 47.1796875,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "logoWidth": 252,
+      "logoHeight": 58,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "logoWidth": 252,
+      "logoHeight": 58,
+      "logoSource": "http://127.0.0.1:4323/_astro/logo-header.DfPeC1Er_Z2uR3VT.webp",
+      "logoLoaded": true,
+      "unusedMobileLogo": false,
+      "heroClear": true,
+      "marqueeGroups": 1,
+      "hiddenDuplicateItems": 4
+    }
+  ],
+  "productionRoutes": [
+    {
+      "route": "/seo-followup-nonexistent-page/",
+      "status": 404,
+      "noindex": true,
+      "consultationMetaRedirect": false,
+      "robots": null
+    },
+    {
+      "route": "/thank-you/",
+      "status": 200,
+      "noindex": true,
+      "consultationMetaRedirect": false,
+      "robots": null
+    },
+    {
+      "route": "/book-a-consultation/",
+      "status": 200,
+      "noindex": true,
+      "consultationMetaRedirect": true,
+      "robots": null
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "noindex": false,
+      "consultationMetaRedirect": false,
+      "robots": "User-agent: *\nAllow: /\n\nSitemap: https://blueriverhomecare.com/sitemap-index.xml\n"
+    }
+  ]
+}

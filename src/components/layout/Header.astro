@@ -1,7 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import { ChevronDown, Menu, Phone } from "@lucide/astro";
 import logoHeader from "../../assets/brand/logo-header.png";
-import logoMobile from "../../assets/brand/logo-mobile.png";
 import { navigation, site } from "../../data/site";
 
 const currentPath = Astro.url.pathname;
@@ -37,24 +37,14 @@ const isCurrent = (href: string) =>
     </nav>
 
     <a class="brand-mark" href="/" aria-label={`${site.name} home`}>
-      <img
+      <Image
         class="desktop-logo"
-        src={logoHeader.src}
+        src={logoHeader}
         alt={site.name}
-        width={logoHeader.width}
-        height={logoHeader.height}
+        loading="eager"
+        widths={[252, 410, 504, 756]}
+        sizes="(max-width: 991px) 205px, 252px"
       />
-      <span class="mobile-brand" aria-hidden="true">
-        <span class="mobile-logo-crop"
-          ><img
-            src={logoMobile.src}
-            alt={site.name}
-            width={logoMobile.width}
-            height={logoMobile.height}
-          /></span
-        >
-        <span><strong>Blue River</strong><small>Home Care</small></span>
-      </span>
     </a>
 
     <a class="button header-call" href={site.phoneMainHref}>

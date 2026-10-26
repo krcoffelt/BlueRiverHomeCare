@@ -27,11 +27,20 @@ Verification
 [x] Changed source formatting and git diff --check pass. Whole-repo format check also reports existing drift in output/seo, scripts/seo-audit.mjs, Footer.astro and contact.astro; those unrelated files were left untouched. Task JSON evidence is formatted separately.
 [x] Desktop/mobile browser screenshots reviewed (38 route/viewport cases; homepage at 320/360/390/768/1024/1440); navigation opens and links to consultation. Empty inquiry form is invalid, explicit consent remains required, POST action /thank-you/ and honeypot preserved. No real lead was submitted and delivery/notification is not claimed tested.
 [x] Browser dimensions and machine results are in browser-qa-2026-10-26.json; local screenshots are under output/playwright (ignored artifacts).
-[x] Both self-hosted fonts loaded from matching preload/CSS asset URLs. Browser emitted preload timing warnings during navigation; no missing font resources. No new Lighthouse/Core Web Vitals improvement claim is made.
+[x] Both self-hosted fonts loaded from matching preload/CSS asset URLs. Browser emitted preload timing warnings during navigation; no missing font resources. Follow-up Lighthouse lab evidence is saved separately; no field Core Web Vitals or ranking improvement is claimed.
 
 Publication
 [x] Committed explicit task paths and pushed main without force; exact local/remote SHA matched.
-[x] Verified Netlify ready/published state, live HTML/assets and GitHub/Vercel outcome. Netlify upload API leaves commit_ref null; independent content comparison and the precise limitation are recorded in deployment-verification-2026-10-26.txt. Runtime source commit and deploy ID are preserved there.
+[x] Verified Netlify ready/published state, live HTML/assets and GitHub/Vercel outcome. The first upload-based deploy left commit_ref null; a subsequent production deploy attested the exact final main SHA. That final receipt is in output/playwright/final-publication-receipt-2026-10-26.json. The first-deploy history is preserved in deployment-verification-2026-10-26.txt.
+
+Follow-up work completed October 26, 2026 (America/Chicago)
+[x] Disabled Netlify's per-project badge in General > Powered by Netlify badge. Dashboard confirmed "The badge is not shown on this project." Fresh live mobile view has no badge over the consultation action. No billing, visibility or tracking-plan changes.
+[x] Ran production mobile Lighthouse: first follow-up run scored performance 89, accessibility 100, best practices 100, SEO 100. It identified unused/oversized logo transfers. Detailed report in output/playwright; summary in docs/seo/lighthouse-followup-2026-10-26.json. This is one lab observation, not evidence of field improvement.
+[x] Removed always-hidden mobile-logo markup and optimized the visible header logo through responsive Astro Image output; retained the same logo, size and alternative text.
+[x] Made the named service marquee an explicit group and hid its four visual duplicate items from the accessibility tree. Added tabindex=-1 to main after keyboard QA showed the skip link scrolled without transferring focus; repeat keyboard check confirmed main receives focus.
+[x] Seven key-route axe WCAG A/AA checks after animations settled: zero automated violations; image/gradient contrast still needs manual judgment. Keyboard and responsive evidence saved in followup-browser-qa-2026-10-26.json. Human screen-reader validation remains open.
+[x] Read-only Netlify Forms metadata confirms care-inquiry detection, consent field and honeypot. No submission contents read and no real test inquiry sent; recipient/notification remains owner-dependent.
+[x] Corrected stale launch-checklist statements about hosting, published headshot, blank GA environment behavior, and completed technical QA. Open approvals remain open.
 
 Owner-dependent actions and questions (deferred, not failures of repository QA)
 [ ] Confirm authoritative legal identity, public address and phone: website Belton 8420 Clint Drive Ste D / 816-641-2881 vs reported NPI 1326975137 Raymore 404 Woodview Dr / 816-291-3734. Site already also stores the latter as a direct number; clarify main/direct phone strategy. Do not overwrite NPPES or public NAP from the audit alone.
@@ -42,5 +51,5 @@ Owner-dependent actions and questions (deferred, not failures of repository QA)
 [ ] Confirm existing Chris headshot permission and image rights: older launch checklist says the photo is unpublished, but current baseline already publishes it. No new image permission was inferred.
 [ ] Owner to verify GBP existence/access/category/service-area/address eligibility, NPPES correction, citations/chamber listings, reviews and external links. Audit absence claims remain limited by incomplete Maps/Yelp checks. No outreach, account creation or external identity edits performed.
 [ ] Owner to provide Search Console/Bing access or tokens, submit sitemap, and verify indexing and real-user performance. No indexing or ranking gains inferred from a successful crawl.
-[ ] Confirm production inquiry recipient/notification, consent/retention and analytics approvals; real submission delivery and comprehensive assistive-technology/Lighthouse auditing remain separate launch work. Existing docs/launch-checklist.md is historical and does not certify these approvals.
+[ ] Confirm production inquiry recipient/notification, consent/retention and analytics approvals; real submission delivery and a human screen-reader session remain separate launch work. docs/launch-checklist.md now reflects verified technical state without certifying owner approvals.
 [ ] Supply access/export for interactive Cursor report if its additional findings are to be assessed.

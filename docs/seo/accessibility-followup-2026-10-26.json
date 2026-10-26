@@ -1,0 +1,119 @@
+{
+  "motion": "normal, 2800ms settled after navigation",
+  "results": [
+    {
+      "route": "/",
+      "passes": 30,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".ref-pill-on-dark"],
+            ["#home-hero-title"],
+            [".ref-hero-copy > p:nth-child(3)"],
+            [".ref-hero-copy > .button[href$=\"consultation/\"]"],
+            [".ref-section-heading > .ref-pill"],
+            [".ref-about-copy > .ref-pill"],
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/about/",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".inner-image-cta-copy > .eyebrow"],
+            ["#about-cta-title"],
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/services/",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            ["#services-cta-title"],
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/services/companion-care/",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/services/in-home-caregiving/",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/consultation/",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "route": "/service-areas/raymore-mo/",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [".ref-footer-contact > div > h2"],
+            [".ref-footer-action[href=\"tel:+18166412881\"]"],
+            [".ref-footer-action:nth-child(3)"]
+          ]
+        }
+      ],
+      "violations": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://blueriverhomecare.com/",
+  "fetchTime": "2026-10-26T05:30:49.682Z",
+  "lighthouseVersion": "12.8.2",
+  "mode": "mobile simulated lab run; not field Core Web Vitals or proof of a performance improvement",
+  "scores": {
+    "performance": 89.0,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": "1.0\u00a0s",
+    "largest-contentful-paint": "3.8\u00a0s",
+    "total-blocking-time": "20\u00a0ms",
+    "cumulative-layout-shift": "0",
+    "speed-index": "1.4\u00a0s"
+  },
+  "actionableFindings": [
+    "Unused hidden mobile PNG (131284 bytes); header PNG too large for rendered size. Removed unused markup; converted active logo to responsive Astro Image.",
+    "Analytics third-party JavaScript and small CSS render-blocking cost remain; tracking/consent behavior preserved."
+  ],
+  "reports": "output/playwright/lighthouse-followup.report.html and .json (ignored local artifacts)"
+}
