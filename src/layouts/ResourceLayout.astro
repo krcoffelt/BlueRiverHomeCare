@@ -52,12 +52,15 @@ const articleSchema = {
   mainEntityOfPage: articleUrl,
   datePublished: entry.data.publishedAt.toISOString(),
   dateModified: entry.data.updatedAt.toISOString(),
-  author: {
-    "@type": "Person",
-    name: entry.data.author,
-    jobTitle: "Director of Operations",
-    worksFor: { "@id": `${site.url}/#business` },
-  },
+  author:
+    entry.data.author === site.name
+      ? { "@id": `${site.url}/#business` }
+      : {
+          "@type": "Person",
+          name: entry.data.author,
+          jobTitle: "Director of Operations",
+          worksFor: { "@id": `${site.url}/#business` },
+        },
   publisher: { "@id": `${site.url}/#business` },
   ...(entry.data.image && {
     image: new URL(entry.data.image.src, site.url).toString(),

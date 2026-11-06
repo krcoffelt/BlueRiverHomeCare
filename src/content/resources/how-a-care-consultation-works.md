@@ -24,6 +24,8 @@ The most useful starting point is an ordinary day. Explain which routines are wo
 
 It also helps to share the client's preferences. A plan is more likely to work when it respects how the person wants to live and how comfortable they feel with outside help.
 
+Use the [home care planning checklist](/resources/home-care-planning-checklist/) to put routines, family responsibilities, and unanswered questions on one printable worksheet before you call.
+
 ## Decide who should join the conversation
 
 Home care decisions often involve a spouse, adult children, relatives, or friends. The consultation can clarify who is making decisions, who currently provides help, and where responsibilities have become difficult to sustain.
